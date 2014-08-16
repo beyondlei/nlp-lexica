@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+    <package name="my22" namespace="/" extends="struts-default">
+        <action name="index" class="edu.kit.aifb.action.IndexAction">
+            <result name="label">/WEB-INF/jsp/labelResult.jsp</result>
+            <result name="resource">/WEB-INF/jsp/resourceResult.jsp</result>
+            <result name="word">/WEB-INF/jsp/wordResult.jsp</result>
+            <result name="labelWithCompare">/WEB-INF/jsp/labelWithCompareResult.jsp</result>
+            <result name="resourceWithCompare">/WEB-INF/jsp/resourceWithCompareResult.jsp</result>
+            <result name="wordWithCompare">/WEB-INF/jsp/wordWithCompareResult.jsp</result>
+            <result name="none">/WEB-INF/jsp/noneResult.jsp</result>
+        </action>
+    </package>
+
+</struts>

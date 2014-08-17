@@ -163,7 +163,7 @@ public class DBpediaLexicalizationsExtractor {
 		try {
 			while (cursor.hasNext()) {
 				double prl = (Double)cursor.next().get(RESOURCE_PROBABILITY_FIELD);
-				String resource = (String) cursor.curr().get(LABEL_FIELD);
+				String resource = (String) cursor.curr().get(RESOURCE_FIELD);
 				resultMap.put(resource, prl);
 			}
 		} finally {
@@ -180,7 +180,7 @@ public class DBpediaLexicalizationsExtractor {
 		try {
 			while (cursor.hasNext()) {
 				double pmi = (Double)cursor.next().get(PMI_FIELD);
-				String resource = (String) cursor.curr().get(LABEL_FIELD);
+				String resource = (String) cursor.curr().get(RESOURCE_FIELD);
 				resultMap.put(resource, pmi);
 			}
 		} finally {

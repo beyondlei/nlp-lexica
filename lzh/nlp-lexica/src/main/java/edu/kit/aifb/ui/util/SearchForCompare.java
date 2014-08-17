@@ -115,7 +115,7 @@ public class SearchForCompare {
 		try {
 			while (cursor.hasNext()) {
 				double prl = (Double)cursor.next().get(DBpediaLexicalizationsExtractor.RESOURCE_PROBABILITY_FIELD);
-				String resource = (String) cursor.curr().get(DBpediaLexicalizationsExtractor.LABEL_FIELD);
+				String resource = (String) cursor.curr().get(DBpediaLexicalizationsExtractor.RESOURCE_FIELD);
 				Resource r =  new Resource();
 				r.setTitle(resource);
 				String newkey = resource.replaceAll(" ", "_");
@@ -142,7 +142,7 @@ public class SearchForCompare {
 		try {
 			while (cursor.hasNext()) {
 				double pmi = (Double)cursor.next().get(DBpediaLexicalizationsExtractor.PMI_FIELD);
-				String resource = (String) cursor.curr().get(DBpediaLexicalizationsExtractor.LABEL_FIELD);
+				String resource = (String) cursor.curr().get(DBpediaLexicalizationsExtractor.RESOURCE_FIELD);
 				Resource r =  new Resource();
 				r.setTitle(resource);
 				String newkey = resource.replaceAll(" ", "_");

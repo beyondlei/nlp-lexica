@@ -5,6 +5,8 @@
 	<head>
 		<title>NPL-Search</title>
 		<meta name="robots" content="noindex,nofollow">
+		
+		<style>a{TEXT-DECORATION:none}</style> 
 	</head>
 <body>
 <h2>NPL-Search</h2>
@@ -52,7 +54,9 @@
 
 <p><small>
 Examples:
-<s:a href="index.action?inlang=en&oulang=en&resultNum=100&type=1&searcher=">     </s:a>,
+<s:a href="index.action?inlang=en&outlang=en&resultNum=100&type=1&compare=1&searcher=FIFA U-20 World Cup">FIFA U-20 World Cup,&nbsp;&nbsp;&nbsp;&nbsp;</s:a>
+<s:a href="index.action?inlang=en&outlang=en&resultNum=100&type=2&compare=1&searcher=football">football,&nbsp;&nbsp;&nbsp;&nbsp;</s:a>
+<s:a href="index.action?inlang=en&outlang=en&resultNum=100&type=3&compare=1&searcher=ipad">ipad,&nbsp;&nbsp;&nbsp;&nbsp;</s:a>
 </small>
 
 <hr>

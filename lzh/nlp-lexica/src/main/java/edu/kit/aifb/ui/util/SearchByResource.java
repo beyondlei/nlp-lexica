@@ -8,6 +8,11 @@ import java.util.Map.Entry;
 import edu.kit.aifb.gwifi.lexica.search.mongodb.ResourceLabelCoOccurrenceMongoDBSearcher;
 import edu.kit.aifb.gwifi.lexica.search.mongodb.ResourceLabelSenseMongoDBSearcher;
 import edu.kit.aifb.gwifi.lexica.search.mongodb.ResourceWordCoOccurrenceMongoDBSearcher;
+import edu.kit.aifb.gwifi.wiki.mongodb.interfaceSearch.InterlingualResourceMongoDBSearch;
+import edu.kit.aifb.ui.util.ChangeCase;
+import edu.kit.aifb.ui.util.MongoDBInfo;
+import edu.kit.aifb.ui.util.Resource;
+import edu.kit.aifb.ui.util.Result;
 
 public class SearchByResource {
 	
@@ -15,21 +20,26 @@ public class SearchByResource {
 	private static ResourceLabelSenseMongoDBSearcher labelResourceSenseSearcher;
 	private static ResourceLabelCoOccurrenceMongoDBSearcher resourceLabelCoOccurrenceSearcher;
 	private static ResourceWordCoOccurrenceMongoDBSearcher resourceWordCoOccurrenceSearcher;
+	private static InterlingualResourceMongoDBSearch interlingualResourceSearcher;
 	
 	private int resultNum;
+	private String lang;
 	
-	public SearchByResource(String lang, int resultNum) throws Exception{
+	public SearchByResource(String inlang, String outlang, int resultNum) throws Exception{
 		this.resultNum = resultNum;
+		this.lang = outlang;
 		
-		labelResourceSenseSearcher = new ResourceLabelSenseMongoDBSearcher(MongoDBInfo.getHost(), MongoDBInfo.getDb(), MongoDBInfo.getLabelResourceSenseColl(),lang);
-		resourceLabelCoOccurrenceSearcher = new ResourceLabelCoOccurrenceMongoDBSearcher(MongoDBInfo.getHost(), MongoDBInfo.getDb(), MongoDBInfo.getResourceLabelCoOccurrenceColl(),lang);
-		resourceWordCoOccurrenceSearcher = new ResourceWordCoOccurrenceMongoDBSearcher(MongoDBInfo.getHost(), MongoDBInfo.getDb(), MongoDBInfo.getResourceWordCoOccurrenceColl(),lang);
+		labelResourceSenseSearcher = new ResourceLabelSenseMongoDBSearcher(MongoDBInfo.getHost(), MongoDBInfo.getDb(), MongoDBInfo.getLabelResourceSenseColl(),outlang);
+		resourceLabelCoOccurrenceSearcher = new ResourceLabelCoOccurrenceMongoDBSearcher(MongoDBInfo.getHost(), MongoDBInfo.getDb(), MongoDBInfo.getResourceLabelCoOccurrenceColl(),outlang);
+		resourceWordCoOccurrenceSearcher = new ResourceWordCoOccurrenceMongoDBSearcher(MongoDBInfo.getHost(), MongoDBInfo.getDb(), MongoDBInfo.getResourceWordCoOccurrenceColl(),outlang);
+		interlingualResourceSearcher = new InterlingualResourceMongoDBSearch(MongoDBInfo.getHost(), MongoDBInfo.getDb(), MongoDBInfo.getInterlingualResourceColl(),inlang,outlang);
 	}
 
 	public void close() throws IOException{
 		labelResourceSenseSearcher.close();
 		resourceLabelCoOccurrenceSearcher.close();
 		resourceWordCoOccurrenceSearcher.close();
+		interlingualResourceSearcher.close();
 	}
 	
 	public Result getResult(String resource) throws IOException{
@@ -41,6 +51,8 @@ public class SearchByResource {
 		result.setRlSensePmi(getLabelResourceSensePmi(resource));
 		result.setRwCoOccurrencePwr(getResourceWordCoOccurrencePwr(resource));
 		result.setRwCoOccurrencePmi(getResourceWordCoOccurrencePmi(resource));
+		
+		result.setCrosslingual(getCrossLingual(resource));
 		
 		this.close();
 		return result;
@@ -152,5 +164,30 @@ public class SearchByResource {
 		}
 		System.out.println("rwcopmiMap      ~"+ rwcopmiMap.size());
 		return rwcopmiMap;
+	}
+	
+	public LinkedHashMap<String, Resource> getCrossLingual(String source) throws IOException{
+		LinkedHashMap<String, String> tmp = interlingualResourceSearcher.searchCrossLanguage(source);
+		
+		if((tmp == null) || (tmp.size() == 0))
+			return null;
+		
+		Iterator<Entry<String, String>> iter = tmp.entrySet().iterator();
+		LinkedHashMap<String, Resource> clMap = new LinkedHashMap<String, Resource>();
+		while(iter.hasNext()){
+			Entry<String, String> entry = iter.next();
+			String key = entry.getKey();
+			String value = entry.getValue();
+			Resource r = new Resource();
+			r.setTitle(value);
+			String newkey = value.replaceAll(" ", "_");
+			if(key.equals("en")){
+				r.setUrl("http://"+MongoDBInfo.getDbpeidaURL()+newkey);
+			}else{
+				r.setUrl("http://" + key +"." + MongoDBInfo.getDbpeidaURL() + newkey);
+			}
+			clMap.put(key, r);
+		}
+		return clMap;
 	}
 }

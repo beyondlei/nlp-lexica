@@ -6,7 +6,7 @@
 		<title>NPL-Search</title>
 		<meta name="robots" content="noindex,nofollow">
 		
-		<style>a{TEXT-DECORATION:none}</style> 
+		<style>a{TEXT-DECORATION:none}</style>
 	</head>
 <body>
 <h2>NPL-Search</h2>
@@ -64,6 +64,21 @@ Examples:
 
 <table cellpadding='5'>
 <tr>
+
+<s:if test="result.crosslingual != null">
+
+<td valign='top'><div style='background-color:#F2F5A9; padding:5px; '>
+Cross Lingual Result Association with <b><s:property value="searcher" /></b>:
+<p><table cellspacing='1' cellpadding='5' border='1' width='250' style='margin:10px; '>
+<tr><td width='180'>Language</td><td nowrap>Label</td></tr>
+
+<s:iterator value="result.crosslingual">
+    <tr><td width='180'><small><s:property value="key"/></small></td><td nowrap><small><s:property value="value.title"/></small></td></tr>
+</s:iterator>  
+    
+</table>
+</div></td>
+</s:if>
 
 <s:if test="result.rlSensePrl != null">
 

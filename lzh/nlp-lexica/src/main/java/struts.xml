@@ -6,7 +6,7 @@
 <struts>
 
     <package name="my22" namespace="/" extends="struts-default">
-        <action name="index" class="edu.kit.aifb.action.IndexAction">
+        <action name="index" class="edu.kit.aifb.ui.action.IndexAction">
             <result name="label">/WEB-INF/jsp/labelResult.jsp</result>
             <result name="resource">/WEB-INF/jsp/resourceResult.jsp</result>
             <result name="word">/WEB-INF/jsp/wordResult.jsp</result>

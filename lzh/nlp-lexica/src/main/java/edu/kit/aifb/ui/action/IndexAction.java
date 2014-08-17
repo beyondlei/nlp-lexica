@@ -2,7 +2,7 @@ package edu.kit.aifb.ui.action;
 
 import com.opensymphony.xwork2.ActionSupport;
 
-import edu.kit.aifb.gwifi.lexica.search.mongodb.InterlingualResourceMongoDBSearch;
+import edu.kit.aifb.gwifi.wiki.mongodb.interfaceSearch.InterlingualResourceMongoDBSearch;
 import edu.kit.aifb.ui.util.CompareResult;
 import edu.kit.aifb.ui.util.MongoDBInfo;
 import edu.kit.aifb.ui.util.Result;
@@ -26,13 +26,14 @@ public class IndexAction extends ActionSupport{
 	
 	public String execute() throws Exception{
 		
-		System.out.println("inlang     ~"+inlang+"     oulang   ~"+outlang+"    searcher    ~"+ searcher+"    type    ~"+type+"    compare    ~"+compare+"      resultNum    ~"+resultNum);
+		System.out.println("inlang     ~"+inlang+"     outlang   ~"+outlang+"    searcher    ~"+ searcher+"    type    ~"+type+"    compare    ~"+compare+"      resultNum    ~"+resultNum);
 		
 		if(inlang.equals(outlang)){
 			input = searcher;
 		}else{
 			InterlingualResourceMongoDBSearch langconvert = new InterlingualResourceMongoDBSearch(MongoDBInfo.getHost(), MongoDBInfo.getDb(), MongoDBInfo.getInterlingualResourceColl(), inlang, outlang);
 			input = langconvert.searchTargetLanguage(searcher);
+			langconvert.close();
 		}
 		
 		if(input.equals(""))
@@ -44,7 +45,7 @@ public class IndexAction extends ActionSupport{
 		}
 		
 		if(type == 1){
-			SearchByResource resourceSearcher = new SearchByResource(outlang, resultNum);
+			SearchByResource resourceSearcher = new SearchByResource(inlang, outlang, resultNum);
 			result = resourceSearcher.getResult(input);
 			if(result.getRlCoOccurrencePlr()!=null || result.getRlCoOccurrencePmi()!=null || result.getRlSensePlr()!=null || result.getRlSensePmi()!=null || result.getRwCoOccurrencePwr()!=null || result.getRwCoOccurrencePmi()!=null){
 				if(outlang.equals("en") && compare == 1)
@@ -54,7 +55,7 @@ public class IndexAction extends ActionSupport{
 			}
 		}
 		else if(type == 2){
-			SearchByLabel labelSearcher = new SearchByLabel(outlang, resultNum);
+			SearchByLabel labelSearcher = new SearchByLabel(inlang, outlang, resultNum);
 			result = labelSearcher.getResult(input);
 			if(result.getRlCoOccurrencePrl()!=null || result.getRlCoOccurrencePmi()!=null || result.getRlSensePrl()!=null || result.getRlSensePmi()!=null){
 				if(outlang.equals("en") && compare == 1)
@@ -64,7 +65,7 @@ public class IndexAction extends ActionSupport{
 			}
 		}
 		else if(type == 3){
-			SearchByWord wordSearcher = new SearchByWord(outlang, resultNum);
+			SearchByWord wordSearcher = new SearchByWord(inlang, outlang, resultNum);
 			result = wordSearcher.getResult(input);
 			if(result.getRwCoOccurrencePrw()!=null || result.getRwCoOccurrencePmi()!=null){
 				if(outlang.equals("en") && compare == 1)

@@ -13,6 +13,9 @@ public class Result {
 	private LinkedHashMap<Resource, Double> rwCoOccurrencePrw;
 	private LinkedHashMap<String, Double> rwCoOccurrencePwr;
 	private LinkedHashMap<Resource, Double> rwCoOccurrencePmi;
+	
+	private LinkedHashMap<String, Resource> crosslingual;
+	
 	public LinkedHashMap<String, Double> getRlSensePlr() {
 		return rlSensePlr;
 	}
@@ -70,6 +73,12 @@ public class Result {
 	public void setRwCoOccurrencePmi(
 			LinkedHashMap<Resource, Double> rwCoOccurrencePmi) {
 		this.rwCoOccurrencePmi = rwCoOccurrencePmi;
+	}
+	public LinkedHashMap<String, Resource> getCrosslingual() {
+		return crosslingual;
+	}
+	public void setCrosslingual(LinkedHashMap<String, Resource> crosslingual) {
+		this.crosslingual = crosslingual;
 	}
 	
 		

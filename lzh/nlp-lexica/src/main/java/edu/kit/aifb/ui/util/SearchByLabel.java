@@ -7,25 +7,33 @@ import java.util.Map.Entry;
 
 import edu.kit.aifb.gwifi.lexica.search.mongodb.ResourceLabelCoOccurrenceMongoDBSearcher;
 import edu.kit.aifb.gwifi.lexica.search.mongodb.ResourceLabelSenseMongoDBSearcher;
+import edu.kit.aifb.gwifi.wiki.mongodb.interfaceSearch.InterlingualResourceMongoDBSearch;
+import edu.kit.aifb.ui.util.ChangeCase;
+import edu.kit.aifb.ui.util.MongoDBInfo;
+import edu.kit.aifb.ui.util.Resource;
+import edu.kit.aifb.ui.util.Result;
 
 public class SearchByLabel {
 	
 	private static ResourceLabelSenseMongoDBSearcher labelResourceSenseSearcher;
 	private static ResourceLabelCoOccurrenceMongoDBSearcher resourceLabelCoOccurrenceSearcher;
+	private static InterlingualResourceMongoDBSearch interlingualResourceSearcher;
 	
 	private int resultNum;
 	private String lang;
 	
-	public SearchByLabel(String lang, int resultNum) throws Exception{
+	public SearchByLabel(String inlang, String outlang, int resultNum) throws Exception{
 		this.resultNum = resultNum;
-		this.lang = lang;
+		this.lang = outlang;
 		labelResourceSenseSearcher = new ResourceLabelSenseMongoDBSearcher(MongoDBInfo.getHost(), MongoDBInfo.getDb(), MongoDBInfo.getLabelResourceSenseColl(),lang);
 		resourceLabelCoOccurrenceSearcher = new ResourceLabelCoOccurrenceMongoDBSearcher(MongoDBInfo.getHost(), MongoDBInfo.getDb(), MongoDBInfo.getResourceLabelCoOccurrenceColl(),lang);
+		interlingualResourceSearcher = new InterlingualResourceMongoDBSearch(MongoDBInfo.getHost(), MongoDBInfo.getDb(), MongoDBInfo.getInterlingualResourceColl(),inlang,outlang);
 	}
 
 	public void close() throws IOException{
 		labelResourceSenseSearcher.close();
 		resourceLabelCoOccurrenceSearcher.close();
+		interlingualResourceSearcher.close();
 	}
 	
 	public Result getResult(String label) throws IOException{
@@ -35,6 +43,7 @@ public class SearchByLabel {
 		result.setRlCoOccurrencePmi(getResourceLabelCoOccurrencePmi(label));
 		result.setRlSensePrl(getLabelResourceSensePrl(label));
 		result.setRlSensePmi(getLabelResourceSensePmi(label));
+		result.setCrosslingual(getCrossLingual(label));
 		
 		this.close();
 		return result;
@@ -154,5 +163,30 @@ public class SearchByLabel {
 		}
 		System.out.println("lrcopmiMap      ~"+ lrcopmiMap.size());
 		return lrcopmiMap;
+	}
+	
+	public LinkedHashMap<String, Resource> getCrossLingual(String source) throws IOException{
+		LinkedHashMap<String, String> tmp = interlingualResourceSearcher.searchCrossLanguage(source);
+		
+		if((tmp == null) || (tmp.size() == 0))
+			return null;
+		
+		Iterator<Entry<String, String>> iter = tmp.entrySet().iterator();
+		LinkedHashMap<String, Resource> clMap = new LinkedHashMap<String, Resource>();
+		while(iter.hasNext()){
+			Entry<String, String> entry = iter.next();
+			String key = entry.getKey();
+			String value = entry.getValue();
+			Resource r = new Resource();
+			r.setTitle(value);
+			String newkey = value.replaceAll(" ", "_");
+			if(key.equals("en")){
+				r.setUrl("http://"+MongoDBInfo.getDbpeidaURL()+newkey);
+			}else{
+				r.setUrl("http://" + key +"." + MongoDBInfo.getDbpeidaURL() + newkey);
+			}
+			clMap.put(key, r);
+		}
+		return clMap;
 	}
 }

@@ -3,13 +3,13 @@
 
 <html>
 	<head>
-		<title>NPL-Search</title>
+		<title>NPL&DBpedia-Lexica</title>
 		<meta name="robots" content="noindex,nofollow">
 		
 		<style>a{TEXT-DECORATION:none}</style>
 	</head>
 <body>
-<h2>NPL-Search</h2>
+<h2>NPL&DBpedia-Lexica</h2>
 
 <hr>
 <s:form action="index.action" method="post" >
@@ -34,14 +34,14 @@
 	</select>
 
 	<select name="resultNum">
-		<option value = "100">select results number be showed</option>
+		<option value = "100">number of results</option>
 		<s:if test="%{resultNum == 100}"><option value = "100" selected>100 results</option></s:if><s:else><option value = "100">100 results</option></s:else>
 		<s:if test="%{resultNum == 1000}"><option value = "1000" selected>1000 results</option></s:if><s:else><option value = "1000">1000 results</option></s:else>
 		<s:if test="%{resultNum > 1000}"><option value = <%=Integer.MAX_VALUE%> selected>all results</option></s:if><s:else><option value = <%=Integer.MAX_VALUE%>>all results</option></s:else>
 	</select>
 	
 	<select name="type">
-		<option value = "1">select search type</option>
+		<option value = "1">search type</option>
 		<s:if test="%{type == 1}"><option value = "1" selected>resource</option></s:if><s:else><option value = "1">resource</option></s:else>
 		<s:if test="%{type == 2}"><option value = "2" selected>label</option></s:if><s:else><option value = "2">label</option></s:else>
 		<s:if test="%{type == 3}"><option value = "3" selected>word</option></s:if><s:else><option value = "3">word</option></s:else>
@@ -49,15 +49,16 @@
 
 	<input type="text" name="searcher" value="<s:property value="searcher" />">
 	<input type="submit" value="search">
-	<s:if test="%{compare ==  1}"><input type="checkbox" name="compare" value="1" checked>Compare with DBpedia NLP Datasets</s:if>
-	<s:else><input type="checkbox" name="compare" value="1">Compare with DBpedia NLP Datasets</s:else>
+	<s:if test="%{compare ==  1}"><input type="checkbox" name="compare" value="1" checked>Compare with <a href="http://wiki.dbpedia.org/Datasets/NLP">DBpedia NLP Datasets</a></s:if>
+	<s:else><input type="checkbox" name="compare" value="1">Compare with <a href="http://wiki.dbpedia.org/Datasets/NLP">DBpedia NLP Datasets</a></s:else>
 </s:form>
 
 <p><small>
 Examples:
-<s:a href="index.action?inlang=en&outlang=en&resultNum=100&type=1&compare=1&searcher=FIFA U-20 World Cup">FIFA U-20 World Cup,&nbsp;&nbsp;&nbsp;&nbsp;</s:a>
-<s:a href="index.action?inlang=en&outlang=en&resultNum=100&type=2&compare=1&searcher=football">football,&nbsp;&nbsp;&nbsp;&nbsp;</s:a>
-<s:a href="index.action?inlang=en&outlang=en&resultNum=100&type=3&compare=1&searcher=ipad">ipad,&nbsp;&nbsp;&nbsp;&nbsp;</s:a>
+<s:a href="index.action?inlang=en&outlang=en&resultNum=100&type=1&searcher=New York&compare=1">New York (Resource)</s:a>, 
+<s:a href="index.action?inlang=zh&outlang=en&resultNum=100&type=1&searcher=纽约&compare=1">纽约 (Resource)</s:a>,
+<s:a href="index.action?inlang=en&outlang=en&resultNum=100&type=2&compare=1&searcher=football">football (Label)</s:a>,
+<s:a href="index.action?inlang=en&outlang=en&resultNum=100&type=3&compare=1&searcher=ipad">ipad (Word)</s:a>
 </small>
 
 <hr>

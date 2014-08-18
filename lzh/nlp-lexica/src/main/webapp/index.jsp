@@ -14,9 +14,9 @@
 <hr>
 <s:form action="index.action" method="post" >
 	<select name="inlang">
-		<option value = "en" selected>input language</option>
+		<option value = "en">input language</option>
 		<option value = "zh">中文</option>
-		<option value = "en">English</option>
+		<option value = "en" selected>English</option>
 		<option value = "de">Deutsch</option>
 		<option value = "es">Español</option>
 		<option value = "ca">Català</option>
@@ -24,9 +24,9 @@
 	</select>
 	
 	<select name="outlang">
-		<option value = "en" selected>output language</option>
+		<option value = "en">output language</option>
 		<option value = "zh">中文</option>
-		<option value = "en">English</option>
+		<option value = "en" selected>English</option>
 		<option value = "de">Deutsch</option>
 		<option value = "es">Español</option>
 		<option value = "ca">Català</option>
@@ -34,15 +34,15 @@
 	</select>
 
 	<select name="resultNum">
-		<option value = "100" selected>number of results</option>
-		<option value = "100">100 results</option>
+		<option value = "100">number of results</option>
+		<option value = "100" selected>100 results</option>
 		<option value = "1000">1000 results</option>
 		<option value = <%=Integer.MAX_VALUE%>>all results</option>
 	</select>
 	
 	<select name="type">
-		<option value = "1" selected>search type</option>
-		<option value = "1">resource</option>
+		<option value = "1">search type</option>
+		<option value = "1" selected>resource</option>
 		<option value = "2">label</option>
 		<option value = "3">word</option>
 	</select>

@@ -14,7 +14,7 @@
 <hr>
 <s:form action="index.action" method="post" >
 	<select name="inlang">
-		<option value = "en">output language</option>
+		<option value = "en">input language</option>
 		<s:if test="%{inlang == 'zh'}"><option value = "zh" selected>中文</option></s:if><s:else><option value = "zh">中文</option></s:else>
 		<s:if test="%{inlang == 'en'}"><option value = "en" selected>English</option></s:if><s:else><option value = "en">English</option></s:else>
 		<s:if test="%{inlang == 'de'}"><option value = "de" selected>Deutsch</option></s:if><s:else><option value = "de">Deutsch</option></s:else>

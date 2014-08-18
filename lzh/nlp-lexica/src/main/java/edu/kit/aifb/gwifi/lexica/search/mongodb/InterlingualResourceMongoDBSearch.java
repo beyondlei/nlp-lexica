@@ -39,7 +39,7 @@ public class InterlingualResourceMongoDBSearch {
 		String targetResource = "";
 		
 		Pattern pattern = Pattern.compile("^"+sourceResource+"$", Pattern.CASE_INSENSITIVE);
-		BasicDBObject query = new BasicDBObject(sourceLanguage, pattern);
+		BasicDBObject query = new BasicDBObject(sourceLanguage, sourceResource);
 	//	query.append(sourceLanguage, sourceResource);
 		DBCursor cursor = coll.find(query);
 		

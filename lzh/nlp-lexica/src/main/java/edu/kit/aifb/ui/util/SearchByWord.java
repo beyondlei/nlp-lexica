@@ -5,8 +5,8 @@ import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.Map.Entry;
 
+import edu.kit.aifb.gwifi.lexica.search.mongodb.InterlingualResourceMongoDBSearch;
 import edu.kit.aifb.gwifi.lexica.search.mongodb.ResourceWordCoOccurrenceMongoDBSearcher;
-import edu.kit.aifb.gwifi.wiki.mongodb.interfaceSearch.InterlingualResourceMongoDBSearch;
 import edu.kit.aifb.ui.util.ChangeCase;
 import edu.kit.aifb.ui.util.MongoDBInfo;
 import edu.kit.aifb.ui.util.Resource;

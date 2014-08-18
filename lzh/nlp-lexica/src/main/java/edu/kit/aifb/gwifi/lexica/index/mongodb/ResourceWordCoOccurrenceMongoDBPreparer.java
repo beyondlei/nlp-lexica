@@ -30,6 +30,7 @@ public class ResourceWordCoOccurrenceMongoDBPreparer {
 
 	private BufferedWriter wordFreqOutput;
 	private BufferedWriter resFreqOutput;
+	private BufferedWriter totalFreqOutput;
 
 	private HashMap<String, Integer> word2freq;
 	private HashMap<String, Integer> res2freq;
@@ -51,57 +52,9 @@ public class ResourceWordCoOccurrenceMongoDBPreparer {
 				+ "/wordFreqWithRes_" + lang.toString() + ".txt"), "UTF-8"));
 		resFreqOutput = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(outputPath + "/resFreqWithWord_"
 				+ lang.toString() + ".txt"), "UTF-8"));
+		totalFreqOutput = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(outputPath
+				+ "/totalResourceWordCoOccurrenceFreq_" + lang.toString() + ".txt"), "UTF-8"));
 	}
-
-	// public void prepare() throws IOException {
-	// Fields fields = MultiFields.getFields(reader);
-	// Terms terms = fields.terms(ResourceWordCoOccurrenceIndexer.WORD_FIELD);
-	// TermsEnum iterator = terms.iterator(null);
-	// BytesRef byteRef = null;
-	// while ((byteRef = iterator.next()) != null) {
-	// String word = new String(byteRef.bytes, byteRef.offset, byteRef.length);
-	// if (word == null || word.equals(""))
-	// continue;
-	// Map<Integer, Integer> id2num = searcher.getCoOccurrences(word,
-	// Integer.MAX_VALUE, false);
-	// int freq = 0;
-	// for (int num : id2num.values()) {
-	// freq += num;
-	// totalCoOccurrenceFreqFromWord += num;
-	// }
-	// wordFreqOutput.write(word + "\t\t" + freq);
-	// wordFreqOutput.newLine();
-	// }
-	// wordFreqOutput.close();
-	//
-	// PageIterator resIter = wikipedia.getPageIterator(PageType.article);
-	// while (resIter.hasNext()) {
-	// Page page = resIter.next();
-	// if (!page.getType().equals(PageType.article))
-	// continue;
-	//
-	// String title = page.getTitle();
-	// if (title == null || title.equals(""))
-	// continue;
-	//
-	// int pageId = page.getId();
-	// Map<String, Integer> label2num = searcher.getCoOccurrences(pageId,
-	// Integer.MAX_VALUE, false);
-	// int freq = 0;
-	// for (int num : label2num.values()) {
-	// freq += num;
-	// totalCoOccurrenceFreqFromResource += num;
-	// }
-	// resFreqOutput.write(title + "\t\t" + freq);
-	// resFreqOutput.newLine();
-	// }
-	// resFreqOutput.close();
-	//
-	// System.out.println("total co-occurrence freqencey given word: " +
-	// totalCoOccurrenceFreqFromWord);
-	// System.out.println("total co-occurrence freqencey given resource: " +
-	// totalCoOccurrenceFreqFromResource);
-	// }
 
 	public void prepare() throws IOException {
 		for (int i = 0; i < reader.maxDoc(); i++) {
@@ -137,26 +90,24 @@ public class ResourceWordCoOccurrenceMongoDBPreparer {
 				res2freq.put(title, resFreq + freq);
 			}
 		}
-
+		reader.close();
 		System.out.println("Resource word co-occurrence relations procesing finished!");
 
 		for (String word : word2freq.keySet()) {
 			wordFreqOutput.write(word + "\t\t" + word2freq.get(word));
 			wordFreqOutput.newLine();
 		}
+		wordFreqOutput.close();
 
 		for (String res : res2freq.keySet()) {
 			resFreqOutput.write(res + "\t\t" + res2freq.get(res));
 			resFreqOutput.newLine();
 		}
-
-		System.out.println("total resource word co-occurrence freqencey: " + totalCoOccurrenceFreq);
-	}
-
-	public void close() throws IOException {
-		reader.close();
-		wordFreqOutput.close();
 		resFreqOutput.close();
+
+		totalFreqOutput.write(String.valueOf(totalCoOccurrenceFreq));
+		totalFreqOutput.close();
+		System.out.println("total resource word co-occurrence freqencey: " + totalCoOccurrenceFreq);
 	}
 
 	// "configs/wikipedia-template-en.xml" "en"
@@ -166,7 +117,6 @@ public class ResourceWordCoOccurrenceMongoDBPreparer {
 		ResourceWordCoOccurrenceMongoDBPreparer converter = new ResourceWordCoOccurrenceMongoDBPreparer(args[0],
 				args[1], args[2], args[3]);
 		converter.prepare();
-		converter.close();
 		long endTime = System.currentTimeMillis();
 		System.out.println("Time: " + (endTime - startTime) / 1000 + "s");
 	}

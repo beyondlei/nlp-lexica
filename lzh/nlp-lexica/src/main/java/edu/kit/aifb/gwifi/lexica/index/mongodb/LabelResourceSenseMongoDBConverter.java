@@ -17,6 +17,7 @@ import com.mongodb.DB;
 import com.mongodb.DBCollection;
 import com.mongodb.MongoClient;
 
+import edu.kit.aifb.gwifi.lexica.Environment;
 import edu.kit.aifb.gwifi.lexica.index.lucene.LabelResourceSenseIndexer;
 import edu.kit.aifb.gwifi.model.Article;
 import edu.kit.aifb.gwifi.model.Label;
@@ -73,38 +74,40 @@ public class LabelResourceSenseMongoDBConverter {
 		for (int i = 0; i < reader.maxDoc(); i++) {
 			Document doc = reader.document(i);
 			if (doc != null) {
-				
-				if (++j % 1000 == 0)
+
+				if (++j % 100000 == 0)
 					System.out.println(j + " labels have been processed!");
-				
+
 				String labelText = doc.get(LabelResourceSenseIndexer.LABEL_FIELD);
-				if(labelText == null || labelText.equals("") || labelText.length() >= 500) 
+				if (labelText == null || labelText.equals("") || labelText.length() >= Environment.INDEX_LENGTH_THRESHOLD)
 					continue;
-				double score = Double.parseDouble(doc.get(LabelResourceSenseIndexer.SCORE_FIELD));
 				int pageId = Integer.parseInt(doc.get(LabelResourceSenseIndexer.PAGE_ID_FIELD));
 				int senseLinkOccCount = Integer.parseInt(doc.get(LabelResourceSenseIndexer.SENSE_LINK_OCC_COUNT_FIELD));
+				if (senseLinkOccCount == 0)
+					senseLinkOccCount = 1;
 
 				Article article = wikipedia.getArticleById(pageId);
 				String title = article.getTitle();
-				if (title == null || title.equals("") || title.length() >= 500)
+				if (title == null || title.equals("") || title.length() >= Environment.INDEX_LENGTH_THRESHOLD)
 					continue;
 				int resLinksCount = article.getTotalLinksInCount();
-				if(resLinksCount == 0)
+				if (resLinksCount == 0)
 					resLinksCount = 1;
 
 				Label label = wikipedia.getLabel(labelText, null);
 				long labelLinksCount = label.getLinkOccCount();
-				if(labelLinksCount == 0)
+				if (labelLinksCount == 0)
 					labelLinksCount = 1;
 
-				double resProb = score;
-				double labelProb = ((double) senseLinkOccCount) / labelLinksCount;
+				double resProbGivenLabel = ((double) senseLinkOccCount) / labelLinksCount;
+				double labelProbGivenRes = ((double) senseLinkOccCount) / resLinksCount;
 				double pmi = Math.log((senseLinkOccCount * totalLinks) / (resLinksCount * labelLinksCount));
 
-				createDocumentByBulk(labelText, article.getTitle(), resProb, labelProb, pmi);
+				createDocumentByBulk(labelText, article.getTitle(), resProbGivenLabel, labelProbGivenRes, pmi);
 			}
 		}
 		builder.execute();
+		reader.close();
 	}
 
 	public void createDocumentByBulk(String label, String resource, double resProb, double labelProb, double pmi) {
@@ -124,7 +127,6 @@ public class LabelResourceSenseMongoDBConverter {
 	}
 
 	public void close() throws IOException {
-		reader.close();
 		mongoClient.close();
 	}
 
@@ -142,20 +144,20 @@ public class LabelResourceSenseMongoDBConverter {
 	}
 }
 
-	// en
-	// Number of label resource sense pairs: 15237596
+// en
+// Number of label resource sense pairs: 15237596
 
-	// de
-	// Number of label resource sense pairs: 5342851
+// de
+// Number of label resource sense pairs: 5342851
 
-	// es
-	// Number of label resource sense pairs: 3563379
+// es
+// Number of label resource sense pairs: 3563379
 
-	// zh
-	// Number of label resource sense pairs: 1425827
+// zh
+// Number of label resource sense pairs: 1425827
 
-	// ca
-	// Number of label resource sense pairs: 1022815	
+// ca
+// Number of label resource sense pairs: 1022815
 
-	// sl
-	// Number of label resource sense pairs: 380517
+// sl
+// Number of label resource sense pairs: 380517

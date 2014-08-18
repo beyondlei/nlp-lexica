@@ -2,7 +2,7 @@ package edu.kit.aifb.ui.action;
 
 import com.opensymphony.xwork2.ActionSupport;
 
-import edu.kit.aifb.gwifi.wiki.mongodb.interfaceSearch.InterlingualResourceMongoDBSearch;
+import edu.kit.aifb.gwifi.lexica.search.mongodb.InterlingualResourceMongoDBSearch;
 import edu.kit.aifb.ui.util.CompareResult;
 import edu.kit.aifb.ui.util.MongoDBInfo;
 import edu.kit.aifb.ui.util.Result;

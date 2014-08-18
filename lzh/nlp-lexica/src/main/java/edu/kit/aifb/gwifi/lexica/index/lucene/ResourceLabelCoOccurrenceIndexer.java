@@ -95,9 +95,10 @@ public class ResourceLabelCoOccurrenceIndexer {
 
 				for (Article a : s_article.getLinksIn()) {
 					for (int i : a.getSentenceIndexesMentioning(s_article)) {
-						int pre = i - Environment.NUM_SORROUNDING_SENTENCES < 0 ? 0 : i - Environment.NUM_SORROUNDING_SENTENCES;
+						int pre = i - Environment.NUM_SORROUNDING_SENTENCES < 0 ? 0 : i
+								- Environment.NUM_SORROUNDING_SENTENCES;
 						int sub = i + Environment.NUM_SORROUNDING_SENTENCES;
-						for(; pre <= sub; pre++) {
+						for (; pre <= sub; pre++) {
 							String sentence = a.getSentenceMarkup(pre);
 
 							Matcher m = Pattern.compile("((?<=\\u005B\\u005B).*?(?=\\u005D\\u005D))").matcher(sentence);
@@ -117,7 +118,7 @@ public class ResourceLabelCoOccurrenceIndexer {
 									labelMap.put(label, 1);
 							}
 						}
-						
+
 					}
 				}
 				createDocument(s_id, labelMap);

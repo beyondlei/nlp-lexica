@@ -1,7 +1,10 @@
 package edu.kit.aifb.gwifi.lexica.search.mongodb;
 
 import java.io.IOException;
+import java.util.Iterator;
+import java.util.LinkedHashMap;
 import java.util.Scanner;
+import java.util.Set;
 import java.util.regex.Pattern;
 
 import com.mongodb.BasicDBObject;
@@ -51,6 +54,34 @@ public class InterlingualResourceMongoDBSearch {
 		if(targetResource.equals("") || targetResource == null)
 			return "";	
 		return targetResource;
+	}
+	
+	public LinkedHashMap<String, String> searchCrossLanguage(String sourceResource) throws IOException {
+		LinkedHashMap<String, String> result = new LinkedHashMap<String, String>();
+		
+		Pattern pattern = Pattern.compile("^"+sourceResource+"$", Pattern.CASE_INSENSITIVE);
+		BasicDBObject query = new BasicDBObject(sourceLanguage, pattern);
+	//	query.append(sourceLanguage, sourceResource);
+		DBCursor cursor = coll.find(query);
+		
+		try {
+			while (cursor.hasNext()) {
+				Set<String> langSet = cursor.next().keySet();
+				Iterator<String> iter = langSet.iterator();
+				while(iter.hasNext()){
+					String lang = iter.next();
+					if(lang.equals("_id") || lang.equals(sourceLanguage))
+						continue;
+					String source = (String)cursor.curr().get(lang);
+					result.put(lang, source);
+				}
+			}
+		} finally {
+			cursor.close();
+		}
+		if(result.size() == 0|| result == null)
+			return null;	
+		return result;
 	}
 
 	public void close() throws IOException {

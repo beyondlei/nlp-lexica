@@ -94,7 +94,8 @@ public class ResourceCoOccurrenceIndexer {
 
 				for (Article a : s_article.getLinksIn()) {
 					for (int i : a.getSentenceIndexesMentioning(s_article)) {
-						int pre = i - Environment.NUM_SORROUNDING_SENTENCES < 0 ? 0 : i - Environment.NUM_SORROUNDING_SENTENCES;
+						int pre = i - Environment.NUM_SORROUNDING_SENTENCES < 0 ? 0 : i
+								- Environment.NUM_SORROUNDING_SENTENCES;
 						int sub = i + Environment.NUM_SORROUNDING_SENTENCES;
 						for (; pre <= sub; pre++) {
 							String sentence = a.getSentenceMarkup(i);

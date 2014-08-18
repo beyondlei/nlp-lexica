@@ -43,14 +43,24 @@ public class ResourceWordCoOccurrenceIndexer {
 	private Wikipedia wikipedia;
 	private MultiLingualAnalyzer multilingualAnalyzer;
 	private Language language;
-	
+
 	private ChineseSegmenter ChineseSegmenter;
 
 	// "configs/wikipedia-template-en.xml" "/index/ResourceWordCoOccurrence"
 	// "en" "res/stopwords/en-stopwords.txt"
+	
+	// "configs/wikipedia-template-zh.xml" "/index/ResourceWordCoOccurrence"
+	// "zh" "res/stopwords/zh-stopwords.txt"  "configs/NLPConfig.properties"
 	public static void main(String[] args) throws Exception {
 		ResourceWordCoOccurrenceIndexer aw = new ResourceWordCoOccurrenceIndexer(args[0], args[1], args[2], args[3]);
 		aw.process();
+	}
+
+	public ResourceWordCoOccurrenceIndexer(String configPath, String indexPath, String lang, String stopwords,
+			String nlpConfigPath) throws Exception {
+		this(configPath, indexPath, lang, stopwords);
+		if (language.equals(Language.ZH))
+			ChineseSegmenter = new ChineseSegmenter(nlpConfigPath);
 	}
 
 	public ResourceWordCoOccurrenceIndexer(String configPath, String indexPath, String lang, String stopwords)
@@ -78,9 +88,6 @@ public class ResourceWordCoOccurrenceIndexer {
 		multilingualAnalyzer = new MultiLingualAnalyzer();
 		multilingualAnalyzer.setStopwordFile(language.toString() + ":" + stopwords);
 		multilingualAnalyzer.setStemming(false);
-		
-		if(language.equals(Language.ZH))
-			ChineseSegmenter = new ChineseSegmenter("configs/NLPConfig.properties");
 	}
 
 	public void process() throws CorruptIndexException, IOException {
@@ -111,11 +118,12 @@ public class ResourceWordCoOccurrenceIndexer {
 
 				for (Article a : s_article.getLinksIn()) {
 					for (int i : a.getSentenceIndexesMentioning(s_article)) {
-						int pre = i - Environment.NUM_SORROUNDING_SENTENCES < 0 ? 0 : i - Environment.NUM_SORROUNDING_SENTENCES;
+						int pre = i - Environment.NUM_SORROUNDING_SENTENCES < 0 ? 0 : i
+								- Environment.NUM_SORROUNDING_SENTENCES;
 						int sub = i + Environment.NUM_SORROUNDING_SENTENCES;
 						for (; pre <= sub; pre++) {
 							String sentence = a.getSentenceMarkup(i);
-							if(language.equals(Language.ZH))
+							if (language.equals(Language.ZH))
 								sentence = ChineseSegmenter.segmentation(sentence);
 
 							TextDocument doc = new TextDocument("context");
@@ -172,8 +180,7 @@ public class ResourceWordCoOccurrenceIndexer {
 		indexWriter.close();
 	}
 
-	public void createDocument(int s_id, Map<String, Integer> articleMap) throws CorruptIndexException,
-			IOException {
+	public void createDocument(int s_id, Map<String, Integer> articleMap) throws CorruptIndexException, IOException {
 
 		Iterator<Entry<String, Integer>> it = articleMap.entrySet().iterator();
 		while (it.hasNext()) {

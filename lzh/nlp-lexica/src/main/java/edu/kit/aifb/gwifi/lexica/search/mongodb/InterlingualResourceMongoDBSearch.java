@@ -60,7 +60,7 @@ public class InterlingualResourceMongoDBSearch {
 		LinkedHashMap<String, String> result = new LinkedHashMap<String, String>();
 		
 		Pattern pattern = Pattern.compile("^"+sourceResource+"$", Pattern.CASE_INSENSITIVE);
-		BasicDBObject query = new BasicDBObject(sourceLanguage, sourceResource);
+		BasicDBObject query = new BasicDBObject(targetLanguage, sourceResource);
 	//	query.append(sourceLanguage, sourceResource);
 		DBCursor cursor = coll.find(query);
 		

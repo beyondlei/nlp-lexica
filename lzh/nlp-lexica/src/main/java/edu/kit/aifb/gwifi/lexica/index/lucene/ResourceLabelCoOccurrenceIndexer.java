@@ -23,6 +23,7 @@ import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
 import org.apache.lucene.util.Version;
 
+import edu.kit.aifb.gwifi.lexica.Environment;
 import edu.kit.aifb.gwifi.model.Article;
 import edu.kit.aifb.gwifi.model.Page;
 import edu.kit.aifb.gwifi.model.Page.PageType;
@@ -94,24 +95,29 @@ public class ResourceLabelCoOccurrenceIndexer {
 
 				for (Article a : s_article.getLinksIn()) {
 					for (int i : a.getSentenceIndexesMentioning(s_article)) {
-						String sentence = a.getSentenceMarkup(i);
+						int pre = i - Environment.NUM_SORROUNDING_SENTENCES < 0 ? 0 : i - Environment.NUM_SORROUNDING_SENTENCES;
+						int sub = i + Environment.NUM_SORROUNDING_SENTENCES;
+						for(; pre <= sub; pre++) {
+							String sentence = a.getSentenceMarkup(pre);
 
-						Matcher m = Pattern.compile("((?<=\\u005B\\u005B).*?(?=\\u005D\\u005D))").matcher(sentence);
-						while (m.find()) {
-							String label = m.group();
+							Matcher m = Pattern.compile("((?<=\\u005B\\u005B).*?(?=\\u005D\\u005D))").matcher(sentence);
+							while (m.find()) {
+								String label = m.group();
 
-							if (label.contains("|"))
-								label = label.substring(label.indexOf("|") + 1, label.length());
-							if (label == null || label.equals(""))
-								continue;
+								if (label.contains("|"))
+									label = label.substring(label.indexOf("|") + 1, label.length());
+								if (label == null || label.equals(""))
+									continue;
 
-							if (labelMap.containsKey(label)) {
-								int frequency = labelMap.get(label);
-								frequency++;
-								labelMap.put(label, frequency);
-							} else
-								labelMap.put(label, 1);
+								if (labelMap.containsKey(label)) {
+									int frequency = labelMap.get(label);
+									frequency++;
+									labelMap.put(label, frequency);
+								} else
+									labelMap.put(label, 1);
+							}
 						}
+						
 					}
 				}
 				createDocument(s_id, labelMap);

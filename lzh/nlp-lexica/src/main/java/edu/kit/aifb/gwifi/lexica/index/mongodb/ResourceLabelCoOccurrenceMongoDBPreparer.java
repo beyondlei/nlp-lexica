@@ -30,6 +30,7 @@ public class ResourceLabelCoOccurrenceMongoDBPreparer {
 
 	private BufferedWriter labelFreqOutput;
 	private BufferedWriter resFreqOutput;
+	private BufferedWriter totalFreqOutput;
 
 	private HashMap<String, Integer> label2freq;
 	private HashMap<String, Integer> res2freq;
@@ -51,65 +52,9 @@ public class ResourceLabelCoOccurrenceMongoDBPreparer {
 				+ "/labelFreqWithRes_" + lang.toString() + ".txt"), "UTF-8"));
 		resFreqOutput = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(outputPath
 				+ "/resFreqWithLabel_" + lang.toString() + ".txt"), "UTF-8"));
+		totalFreqOutput = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(outputPath
+				+ "/totalResourceLabelCoOccurrenceFreq_" + lang.toString() + ".txt"), "UTF-8"));
 	}
-
-	// This method is too slow.
-	// public void prepare() throws IOException {
-	// LabelIterator labelIter = wikipedia.getLabelIterator(null);
-	// int j = 0;
-	// while (labelIter.hasNext()) {
-	// if (++j % 1000 == 0)
-	// System.out.println(j + " labels have been processed!");
-	//
-	// Label label = labelIter.next();
-	// String labelText = label.getText().trim();
-	// if (labelText == null || labelText.equals(""))
-	// continue;
-	//
-	// Map<Integer, Integer> id2num = searcher.getCoOccurrences(labelText,
-	// Integer.MAX_VALUE, false);
-	// int freq = 0;
-	// for (int num : id2num.values()) {
-	// freq += num;
-	// totalCoOccurrenceFreqFromLabel += num;
-	// }
-	//
-	// labelFreqOutput.write(labelText + "\t\t" + freq);
-	// labelFreqOutput.newLine();
-	// }
-	//
-	// PageIterator resIter = wikipedia.getPageIterator(PageType.article);
-	// j = 0;
-	// while (resIter.hasNext()) {
-	// if (++j % 1000 == 0)
-	// System.out.println(j + " resources have been processed!");
-	//
-	// Page page = resIter.next();
-	// if (!page.getType().equals(PageType.article))
-	// continue;
-	//
-	// String title = page.getTitle();
-	// if (title == null || title.equals(""))
-	// continue;
-	//
-	// int pageId = page.getId();
-	// Map<String, Integer> label2num = searcher.getCoOccurrences(pageId,
-	// Integer.MAX_VALUE, false);
-	// int freq = 0;
-	// for (int num : label2num.values()) {
-	// freq += num;
-	// totalCoOccurrenceFreqFromResource += num;
-	// }
-	//
-	// resFreqOutput.write(title + "\t\t" + freq);
-	// resFreqOutput.newLine();
-	// }
-	//
-	// System.out.println("total co-occurrence freqencey given label: " +
-	// totalCoOccurrenceFreqFromLabel);
-	// System.out.println("total co-occurrence freqencey given resource: " +
-	// totalCoOccurrenceFreqFromResource);
-	// }
 
 	public void prepare() throws IOException {
 		for (int i = 0; i < reader.maxDoc(); i++) {
@@ -145,26 +90,24 @@ public class ResourceLabelCoOccurrenceMongoDBPreparer {
 				res2freq.put(title, resFreq + freq);
 			}
 		}
-
+		reader.close();
 		System.out.println("Resource label co-occurrence relations procesing finished!");
 
 		for (String label : label2freq.keySet()) {
 			labelFreqOutput.write(label + "\t\t" + label2freq.get(label));
 			labelFreqOutput.newLine();
 		}
+		labelFreqOutput.close();
 
 		for (String res : res2freq.keySet()) {
 			resFreqOutput.write(res + "\t\t" + res2freq.get(res));
 			resFreqOutput.newLine();
 		}
-
-		System.out.println("total resource label co-occurrence freqencey: " + totalCoOccurrenceFreq);
-	}
-
-	public void close() throws IOException {
-		reader.close();
-		labelFreqOutput.close();
 		resFreqOutput.close();
+
+		totalFreqOutput.write(String.valueOf(totalCoOccurrenceFreq));
+		totalFreqOutput.close();
+		System.out.println("total resource label co-occurrence freqencey: " + totalCoOccurrenceFreq);
 	}
 
 	// "configs/wikipedia-template-en.xml" "en"
@@ -174,7 +117,6 @@ public class ResourceLabelCoOccurrenceMongoDBPreparer {
 		ResourceLabelCoOccurrenceMongoDBPreparer converter = new ResourceLabelCoOccurrenceMongoDBPreparer(args[0],
 				args[1], args[2], args[3]);
 		converter.prepare();
-		converter.close();
 		long endTime = System.currentTimeMillis();
 		System.out.println("Time: " + (endTime - startTime) / 1000 + "s");
 	}

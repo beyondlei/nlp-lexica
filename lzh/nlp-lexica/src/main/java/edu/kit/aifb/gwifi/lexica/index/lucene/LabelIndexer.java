@@ -21,7 +21,6 @@ import edu.kit.aifb.gwifi.model.Label;
 import edu.kit.aifb.gwifi.model.Wikipedia;
 import edu.kit.aifb.gwifi.util.LabelIterator;
 
-
 public class LabelIndexer {
 
 	public static String LABEL_FIELD = "label";
@@ -53,15 +52,15 @@ public class LabelIndexer {
 
 		int j = 0;
 		while (iter.hasNext()) {
-			
+
 			if (++j % 1000 == 0)
 				System.out.println(j + " labels have been processed!");
-			
+
 			Label label = iter.next();
 			String labelText = label.getText();
-			if(labelText == null || labelText.equals(""))
+			if (labelText == null || labelText.equals(""))
 				continue;
-			
+
 			createDocuments(label, indexWriter);
 		}
 		iter.close();

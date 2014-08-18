@@ -20,6 +20,7 @@ import com.mongodb.DB;
 import com.mongodb.DBCollection;
 import com.mongodb.MongoClient;
 
+import edu.kit.aifb.gwifi.lexica.Environment;
 import edu.kit.aifb.gwifi.lexica.index.lucene.ResourceLabelCoOccurrenceIndexer;
 import edu.kit.aifb.gwifi.model.Article;
 import edu.kit.aifb.gwifi.model.Wikipedia;
@@ -49,32 +50,37 @@ public class ResourceLabelCoOccurrenceMongoDBConverter {
 	private Language lang;
 	private long totalCoOccurrenceFreq;
 
-	private static final Map<Language, Long> lang2totalCoOccurrenceFreq;
-	static {
-		Map<Language, Long> map = new HashMap<Language, Long>();
-		map.put(Language.EN, 230459102l);
-		map.put(Language.DE, 93931841l);
-		map.put(Language.ES, 88140920l);
-		map.put(Language.ZH, 30966726l);
-		map.put(Language.CA, 1022815l);
-		map.put(Language.SL, 45091892l);
-		lang2totalCoOccurrenceFreq = Collections.unmodifiableMap(map);
-	}
+//	private static final Map<Language, Long> lang2totalCoOccurrenceFreq;
+//	static {
+//		Map<Language, Long> map = new HashMap<Language, Long>();
+//		map.put(Language.EN, 230459102l);
+//		map.put(Language.DE, 93931841l);
+//		map.put(Language.ES, 88140920l);
+//		map.put(Language.ZH, 30966726l);
+//		map.put(Language.CA, 1022815l);
+//		map.put(Language.SL, 45091892l);
+//		lang2totalCoOccurrenceFreq = Collections.unmodifiableMap(map);
+//	}
 
 	public ResourceLabelCoOccurrenceMongoDBConverter(String config, String langLabel, String inputPath,
-			String freqPath, String dbName, String collName, int port) throws Exception {
+			String freqPath, String dbName, String collName, String host, int port) throws Exception {
 		File databaseDirectory = new File(config);
 		wikipedia = new Wikipedia(databaseDirectory, false);
 		reader = DirectoryReader.open(FSDirectory.open(new File(inputPath)));
 		lang = Language.getLanguage(langLabel);
-		totalCoOccurrenceFreq = lang2totalCoOccurrenceFreq.get(lang);
-
+		
+//		totalCoOccurrenceFreq = lang2totalCoOccurrenceFreq.get(lang);
+		BufferedReader totalFreqReader = new BufferedReader(new InputStreamReader(new FileInputStream(freqPath
+				+ "/totalResourceLabelCoOccurrenceFreq_" + lang.toString() + ".txt"), "UTF-8"));
+		totalCoOccurrenceFreq = Long.valueOf(totalFreqReader.readLine());
+		totalFreqReader.close();
+		
 		labelFreqReader = new BufferedReader(new InputStreamReader(new FileInputStream(freqPath + "/labelFreqWithRes_"
-				+ lang.toString() + ".txt"), "UTF8"));
+				+ lang.toString() + ".txt"), "UTF-8"));
 		resFreqReader = new BufferedReader(new InputStreamReader(new FileInputStream(freqPath + "/resFreqWithLabel_"
-				+ lang.toString() + ".txt"), "UTF8"));
+				+ lang.toString() + ".txt"), "UTF-8"));
 
-		mongoClient = new MongoClient("localhost", port);
+		mongoClient = new MongoClient(host, port);
 		DB db = mongoClient.getDB(dbName);
 		coll = db.getCollection(collName + "_" + lang.toString());
 		builder = coll.initializeUnorderedBulkOperation();
@@ -83,7 +89,7 @@ public class ResourceLabelCoOccurrenceMongoDBConverter {
 		res2freq = new HashMap<String, Integer>();
 	}
 
-	public void prepare() throws IOException {
+	public void load() throws IOException {
 		String lineLabelFreq;
 		while ((lineLabelFreq = labelFreqReader.readLine()) != null) {
 			String[] parts = lineLabelFreq.split("\t\t");
@@ -118,23 +124,28 @@ public class ResourceLabelCoOccurrenceMongoDBConverter {
 				Article article = wikipedia.getArticleById(pageId);
 				String title = article.getTitle();
 				
-				if (labelText == null || labelText.equals("") || labelText.length() >= 500)
+				if (labelText == null || labelText.equals("") || labelText.length() >= Environment.INDEX_LENGTH_THRESHOLD)
 					continue;
 				
-				if (title == null || title.equals("") || title.length() >= 500)
+				if (title == null || title.equals("") || title.length() >= Environment.INDEX_LENGTH_THRESHOLD)
 					continue;
 
+				if (freq == 0)
+					freq = 1;
+				
 				int freqRes = res2freq.get(title);
 				if (freqRes == 0)
 					freqRes = 1;
-				double resProb = ((double) freq) / freqRes;
+				
 				int freqLabel = label2freq.get(labelText);
 				if (freqLabel == 0)
 					freqLabel = 1;
-				double labelProb = ((double) freq) / freqLabel;
+				
+				double resProbGivenLabel = ((double) freq) / freqLabel;
+				double labelProbGivenRes = ((double) freq) / freqRes;
 				double pmi = Math.log((freq * totalCoOccurrenceFreq) / (freqRes * freqLabel));
 
-				createDocumentByBulk(labelText, article.getTitle(), resProb, labelProb, pmi);
+				createDocumentByBulk(labelText, article.getTitle(), resProbGivenLabel, labelProbGivenRes, pmi);
 				
 				if((i + 1) % 100000 == 0) {
 					builder.execute();
@@ -171,12 +182,12 @@ public class ResourceLabelCoOccurrenceMongoDBConverter {
 
 	// "configs/wikipedia-template-en.xml" "en"
 	// "/index/ResourceLabelCoOccurrence" "/index"
-	// "lexica" "ResourceLabelCoOccurrence" "19000"
+	// "lexica" "ResourceLabelCoOccurrence" "localhost" "19000"
 	public static void main(String[] args) throws Exception {
 		long startTime = System.currentTimeMillis();
 		ResourceLabelCoOccurrenceMongoDBConverter converter = new ResourceLabelCoOccurrenceMongoDBConverter(args[0],
-				args[1], args[2], args[3], args[4], args[5], Integer.parseInt(args[6]));
-		converter.prepare();
+				args[1], args[2], args[3], args[4], args[5], args[6], Integer.parseInt(args[7]));
+		converter.load();
 		converter.convert();
 		converter.createIndex();
 		converter.close();

@@ -1,78 +1,60 @@
 package edu.kit.aifb.gwifi.lexica.index.lucene;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.LinkedHashMap;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import org.apache.lucene.analysis.Analyzer;
-import org.apache.lucene.analysis.standard.StandardAnalyzer;
-import org.apache.lucene.document.Document;
-import org.apache.lucene.document.Field;
-import org.apache.lucene.document.IntField;
-import org.apache.lucene.document.StringField;
 import org.apache.lucene.index.CorruptIndexException;
-import org.apache.lucene.index.IndexWriter;
-import org.apache.lucene.index.IndexWriterConfig;
-import org.apache.lucene.index.IndexWriterConfig.OpenMode;
-import org.apache.lucene.store.Directory;
-import org.apache.lucene.store.FSDirectory;
-import org.apache.lucene.util.Version;
 
 import edu.kit.aifb.gwifi.lexica.Environment;
 import edu.kit.aifb.gwifi.model.Article;
-import edu.kit.aifb.gwifi.model.Page;
-import edu.kit.aifb.gwifi.model.Page.PageType;
 import edu.kit.aifb.gwifi.model.Wikipedia;
-import edu.kit.aifb.gwifi.util.PageIterator;
-import edu.kit.aifb.gwifi.util.nlp.MultiLingualAnalyzer;
 import edu.kit.aifb.gwifi.util.nlp.ITokenStream;
 import edu.kit.aifb.gwifi.util.nlp.Language;
+import edu.kit.aifb.gwifi.util.nlp.MultiLingualAnalyzer;
 import edu.kit.aifb.gwifi.util.nlp.TextDocument;
 
-public class ResourceWordCoOccurrenceIndexer {
+public class ResourceWordCoOccurrenceTest {
 
 	public static String PAGE_ID_FIELD = "id";
 	public static String WORD_FIELD = "word";
 	public static String FREQUENCY_FIELD = "frequency";
 
-	private PageIterator iter;
-	private IndexWriter indexWriter;
+	private BufferedWriter output;
 	private Wikipedia wikipedia;
 	private MultiLingualAnalyzer multilingualAnalyzer;
 	private Language language;
 	
 	private ChineseSegmenter ChineseSegmenter;
 
-	// "configs/wikipedia-template-en.xml" "/index/ResourceWordCoOccurrence"
-	// "en" "res/stopwords/en-stopwords.txt"
+	// "configs/wikipedia-template-en.xml" "res/"
+	// "en" "stopwords/en-stopwords.txt"
 	public static void main(String[] args) throws Exception {
-		ResourceWordCoOccurrenceIndexer aw = new ResourceWordCoOccurrenceIndexer(args[0], args[1], args[2], args[3]);
+		ResourceWordCoOccurrenceTest aw = new ResourceWordCoOccurrenceTest(args[0], args[1], args[2], args[3]);
 		aw.process();
 	}
 
-	public ResourceWordCoOccurrenceIndexer(String configPath, String indexPath, String lang, String stopwords)
+	public ResourceWordCoOccurrenceTest(String configPath, String outputPath, String lang, String stopwords)
 			throws Exception {
 		File databaseDirectory = new File(configPath);
 		wikipedia = new Wikipedia(databaseDirectory, false);
 		System.out.println("The Wikipedia environment has been initialized.");
-		iter = wikipedia.getPageIterator(PageType.article);
 
-		File indexDir = new File(indexPath);
-		if (!indexDir.exists()) {
-			boolean created = indexDir.mkdirs();
-			if (!created) {
-				System.out.print("Cannot create the index directory");
-			}
-		}
-		Directory index = FSDirectory.open(indexDir);
-		Analyzer analyzer = new StandardAnalyzer(Version.LUCENE_48);
-		IndexWriterConfig iwc = new IndexWriterConfig(Version.LUCENE_48, analyzer);
-		iwc.setOpenMode(OpenMode.CREATE);
-		iwc.setRAMBufferSizeMB(256.0);
-		indexWriter = new IndexWriter(index, iwc);
+		output = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(outputPath
+				+ "/resourceWordCoOccurrence.txt", true), "UTF-8"));
 
 		language = Language.getLanguage(lang);
 		multilingualAnalyzer = new MultiLingualAnalyzer();
@@ -84,21 +66,14 @@ public class ResourceWordCoOccurrenceIndexer {
 	}
 
 	public void process() throws CorruptIndexException, IOException {
-		int j = 0;
-		while (iter.hasNext()) {
+		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 
-			if (++j % 1000 == 0)
-				System.out.println(j + " articles have been processed!");
+		while (true) {
+			System.out.println("\nEnter article title (or enter to quit): ");
+			String s_title = in.readLine();
 
-			Page page = iter.next();
-
-			if (!page.getType().equals(PageType.article))
-				continue;
-
-			String s_title = page.getTitle();
-
-			if (s_title == null || s_title.equals(""))
-				continue;
+			if (s_title == null || s_title.equals("") || s_title.equals("exit"))
+				break;
 
 			Article s_article = wikipedia.getArticleByTitle(s_title);
 
@@ -107,7 +82,6 @@ public class ResourceWordCoOccurrenceIndexer {
 				continue;
 			} else {
 				Map<String, Integer> wordsMap = new HashMap<String, Integer>();
-				int s_id = s_article.getId();
 
 				for (Article a : s_article.getLinksIn()) {
 					for (int i : a.getSentenceIndexesMentioning(s_article)) {
@@ -165,34 +139,48 @@ public class ResourceWordCoOccurrenceIndexer {
 						}
 					}
 				}
-				createDocument(s_id, wordsMap);
+				print(s_title, wordsMap);
 			}
 		}
-		iter.close();
-		indexWriter.close();
+		output.close();
 	}
 
-	public void createDocument(int s_id, Map<String, Integer> articleMap) throws CorruptIndexException,
-			IOException {
-
-		Iterator<Entry<String, Integer>> it = articleMap.entrySet().iterator();
+	public void print(String articleTitle, Map<String, Integer> wordMap) throws CorruptIndexException, IOException {
+		output.write("============== Resource: " + articleTitle + " ==============");
+		output.newLine();
+		
+		wordMap = sortByValues(wordMap);
+		
+		Iterator<Entry<String, Integer>> it = wordMap.entrySet().iterator();
 		while (it.hasNext()) {
 			Map.Entry<String, Integer> entry = (Map.Entry<String, Integer>) it.next();
 			String word = entry.getKey();
 			int frequency = entry.getValue();
-
-			Document doc = new Document();
-
-			Field id_field = new IntField(PAGE_ID_FIELD, s_id, Field.Store.YES);
-			Field word_field = new StringField(WORD_FIELD, word, Field.Store.YES);
-			Field frequency_field = new IntField(FREQUENCY_FIELD, frequency, Field.Store.YES);
-
-			doc.add(id_field);
-			doc.add(word_field);
-			doc.add(frequency_field);
-
-			indexWriter.addDocument(doc);
+			output.write("Word: " + word + ",\t\t" + "Frequency: " + frequency);
+			output.newLine();
 		}
+		output.newLine();
+		output.flush();
+	}
+
+	public static <K extends Comparable, V extends Comparable> Map<K, V> sortByValues(Map<K, V> map) {
+		List<Map.Entry<K, V>> entries = new LinkedList<Map.Entry<K, V>>(map.entrySet());
+
+		Collections.sort(entries, new Comparator<Map.Entry<K, V>>() {
+
+			@Override
+			public int compare(Entry<K, V> o1, Entry<K, V> o2) {
+				return o2.getValue().compareTo(o1.getValue());
+			}
+		});
+
+		Map<K, V> sortedMap = new LinkedHashMap<K, V>();
+
+		for (Map.Entry<K, V> entry : entries) {
+			sortedMap.put(entry.getKey(), entry.getValue());
+		}
+
+		return sortedMap;
 	}
 
 }

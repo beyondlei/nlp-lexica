@@ -70,7 +70,7 @@ public class InterlingualResourceMongoDBSearch {
 				Iterator<String> iter = langSet.iterator();
 				while(iter.hasNext()){
 					String lang = iter.next();
-					if(lang.equals("_id") || lang.equals(sourceLanguage))
+					if(lang.equals("_id"))
 						continue;
 					String source = (String)cursor.curr().get(lang);
 					result.put(lang, source);

@@ -47,7 +47,7 @@ public class IndexAction extends ActionSupport{
 		if(type == 1){
 			SearchByResource resourceSearcher = new SearchByResource(inlang, outlang, resultNum);
 			result = resourceSearcher.getResult(input);
-			if(result.getRlCoOccurrencePlr()!=null || result.getRlCoOccurrencePmi()!=null || result.getRlSensePlr()!=null || result.getRlSensePmi()!=null || result.getRwCoOccurrencePwr()!=null || result.getRwCoOccurrencePmi()!=null){
+			if(result.getCrosslingual() != null || result.getRlCoOccurrencePlr()!=null || result.getRlCoOccurrencePmi()!=null || result.getRlSensePlr()!=null || result.getRlSensePmi()!=null || result.getRwCoOccurrencePwr()!=null || result.getRwCoOccurrencePmi()!=null){
 				if(outlang.equals("en") && compare == 1)
 					return "resourceWithCompare";
 				else
@@ -57,7 +57,7 @@ public class IndexAction extends ActionSupport{
 		else if(type == 2){
 			SearchByLabel labelSearcher = new SearchByLabel(inlang, outlang, resultNum);
 			result = labelSearcher.getResult(input);
-			if(result.getRlCoOccurrencePrl()!=null || result.getRlCoOccurrencePmi()!=null || result.getRlSensePrl()!=null || result.getRlSensePmi()!=null){
+			if(result.getCrosslingual() != null || result.getRlCoOccurrencePrl()!=null || result.getRlCoOccurrencePmi()!=null || result.getRlSensePrl()!=null || result.getRlSensePmi()!=null){
 				if(outlang.equals("en") && compare == 1)
 					return "labelWithCompare";
 				else
@@ -67,7 +67,7 @@ public class IndexAction extends ActionSupport{
 		else if(type == 3){
 			SearchByWord wordSearcher = new SearchByWord(inlang, outlang, resultNum);
 			result = wordSearcher.getResult(input);
-			if(result.getRwCoOccurrencePrw()!=null || result.getRwCoOccurrencePmi()!=null){
+			if(result.getCrosslingual() != null || result.getRwCoOccurrencePrw()!=null || result.getRwCoOccurrencePmi()!=null){
 				if(outlang.equals("en") && compare == 1)
 					return "wordWithCompare";
 				else

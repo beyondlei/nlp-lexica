@@ -55,10 +55,10 @@
 
 <p><small>
 Examples:
-<s:a href="index.action?inlang=en&outlang=en&resultNum=100&type=1&searcher=New York&compare=1">New York (Resource)</s:a>, 
-<s:a href="index.action?inlang=zh&outlang=en&resultNum=100&type=1&searcher=纽约&compare=1">纽约 (Resource)</s:a>,
-<s:a href="index.action?inlang=en&outlang=en&resultNum=100&type=2&compare=1&searcher=football">football (Label)</s:a>,
-<s:a href="index.action?inlang=en&outlang=en&resultNum=100&type=3&compare=1&searcher=ipad">ipad (Word)</s:a>
+<s:a href="index.action?inlang=en&outlang=en&resultNum=100&type=1&searcher=New York">New York (Resource)</s:a>, 
+<s:a href="index.action?inlang=zh&outlang=en&resultNum=100&type=1&searcher=纽约">纽约 (Resource)</s:a>,
+<s:a href="index.action?inlang=en&outlang=en&resultNum=100&type=2&searcher=football">football (Label)</s:a>,
+<s:a href="index.action?inlang=en&outlang=en&resultNum=100&type=3&searcher=ipad">ipad (Word)</s:a>
 </small>
 
 <hr>

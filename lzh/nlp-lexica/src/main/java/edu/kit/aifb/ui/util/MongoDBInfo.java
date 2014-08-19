@@ -5,13 +5,14 @@ public class MongoDBInfo {
 	private static String dbpeidaURL = "dbpedia.org/resource/";
 	
 	private static String host = "mongodb://aifb-ls3-remus.aifb.kit.edu:19000";
+//	private static String host = "mongodb://localhost:19000";
 	private static String db = "lexica";
 	
 	private static String LabelResourceSenseColl = "LabelResourceSense_new";
 	private static String ResourceLabelCoOccurrenceColl = "ResourceLabelCoOccurrence";
 	private static String ResourceWordCoOccurrenceColl = "ResourceWordCoOccurrence";
 	private static String InterlingualResourceColl = "InterlingualResource_all";
-	private static String ResourceLabelCompareColl = "ResourceLabelCompare";
+	private static String ResourceLabelCompareColl = "LexicalizationsBaseline";
 	private static String ResourceWordCompareColl = "ResourceWordCompare";
 	
 	

@@ -123,8 +123,6 @@ public class ResourceLabelCoOccurrenceTest {
 		List<Map.Entry<K, V>> entries = new LinkedList<Map.Entry<K, V>>(map.entrySet());
 
 		Collections.sort(entries, new Comparator<Map.Entry<K, V>>() {
-
-			@Override
 			public int compare(Entry<K, V> o1, Entry<K, V> o2) {
 				return o2.getValue().compareTo(o1.getValue());
 			}

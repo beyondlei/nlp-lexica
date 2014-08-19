@@ -13,12 +13,11 @@ import com.mongodb.DB;
 import com.mongodb.DBCollection;
 import com.mongodb.DBCursor;
 import com.mongodb.MongoClient;
-import com.mongodb.MongoClientURI;
 
 public class DBpediaLexicalizationsExtractor2 {
 
-	static String inFile = "C:/Users/Jason/Desktop/new lexi.txt";
-	static String host = "mongodb://aifb-ls3-remus.aifb.kit.edu:19000";
+//	static String inFile = "C:/Users/Jason/Desktop/new lexi.txt";
+//	static String host = "mongodb://aifb-ls3-remus.aifb.kit.edu:19000";
 	
 	public static String RESOURCE_FIELD = "resource";
 	public static String LABEL_FIELD = "label";
@@ -26,20 +25,23 @@ public class DBpediaLexicalizationsExtractor2 {
 	public static String RESOURCE_PROBABILITY_FIELD = "UriGivenSf";//p(r|l)
 	public static String PMI_FIELD = "pmi";//p(r,l)
 
+	private String inputPath;
+	
 	private MongoClient mongoClient;
 	private DBCollection coll;
 	private BulkWriteOperation builder;
 	
-	public DBpediaLexicalizationsExtractor2(String dbName, String collName)throws Exception{
-		
-		mongoClient = new MongoClient(new MongoClientURI(host));
+	public DBpediaLexicalizationsExtractor2(String inputPath, String dbName, String collName, String host, int port)
+			throws Exception {
+		this.inputPath = inputPath;
+		mongoClient = new MongoClient(host, port);
 		DB db = mongoClient.getDB(dbName);
 		coll = db.getCollection(collName);
 		builder = coll.initializeUnorderedBulkOperation();
 	}
 	
-	public void extractInformation(String inPath) throws Exception{
-		BufferedReader reader = new BufferedReader(new FileReader(inPath));
+	public void extractInformation() throws Exception{
+		BufferedReader reader = new BufferedReader(new FileReader(inputPath));
 
 		String tmp,lastresource="", lastlabel="", resource="", label="";
 		double sfGivenUri=0, uriGivenSf=0, pmi=0;
@@ -176,11 +178,14 @@ public class DBpediaLexicalizationsExtractor2 {
 		return resultMap;
 	}
 	
+	// "/home/ws/oi1299/lexica/lexicalizations.pairThresh5.nq" "lexica"
+	// "ResourceLabelCompare" "localhost" "19000"
 	public static void main(String[] args) {
-		try{
-			DBpediaLexicalizationsExtractor2 lee = new DBpediaLexicalizationsExtractor2("lexica", "ResourceLabelCompare2");
-			
-			lee.extractInformation(inFile);
+		try {
+			DBpediaLexicalizationsExtractor2 lee = new DBpediaLexicalizationsExtractor2(args[0], args[1], args[2],
+					args[3], Integer.parseInt(args[4]));
+
+			lee.extractInformation();
 			lee.createIndex();
 			
 			/*LinkedHashMap<String, Double> r = lee.searchPmiByResource("Individual_reclamation", 2);

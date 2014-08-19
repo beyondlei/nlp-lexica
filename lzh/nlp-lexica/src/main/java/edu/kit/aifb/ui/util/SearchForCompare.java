@@ -13,7 +13,7 @@ import com.mongodb.DBCursor;
 import com.mongodb.MongoClient;
 import com.mongodb.MongoClientURI;
 
-import edu.kit.aifb.gwifi.lexica.index.mongodb.baseline.DBpediaLexicalizationsExtractor;
+import edu.kit.aifb.gwifi.lexica.index.mongodb.baseline.DBpediaLexicalizationsExtractor2;
 import edu.kit.aifb.gwifi.lexica.index.mongodb.baseline.DBpediaTopicSignaturesExtractor;
 
 public class SearchForCompare {
@@ -61,12 +61,12 @@ public class SearchForCompare {
 		resource = resource.replaceAll(" ", "_");
 		
 		Pattern pattern = Pattern.compile("^"+resource+"$", Pattern.CASE_INSENSITIVE);
-		BasicDBObject query = new BasicDBObject(DBpediaLexicalizationsExtractor.RESOURCE_FIELD, pattern);
-		DBCursor cursor = rlcoll.find(query).sort(new BasicDBObject(DBpediaLexicalizationsExtractor.LABEL_PROBABILITY_FIELD, -1)).limit(resultNum);
+		BasicDBObject query = new BasicDBObject(DBpediaLexicalizationsExtractor2.RESOURCE_FIELD, pattern);
+		DBCursor cursor = rlcoll.find(query).sort(new BasicDBObject(DBpediaLexicalizationsExtractor2.LABEL_PROBABILITY_FIELD, -1)).limit(resultNum);
 		try {
 			while (cursor.hasNext()) {
-				double plr = (Double)cursor.next().get(DBpediaLexicalizationsExtractor.LABEL_PROBABILITY_FIELD);
-				String label = (String) cursor.curr().get(DBpediaLexicalizationsExtractor.LABEL_FIELD);
+				double plr = (Double)cursor.next().get(DBpediaLexicalizationsExtractor2.LABEL_PROBABILITY_FIELD);
+				String label = (String) cursor.curr().get(DBpediaLexicalizationsExtractor2.LABEL_FIELD);
 				resultMap.put(label, plr);
 			}
 		} finally {
@@ -84,12 +84,12 @@ public class SearchForCompare {
 		resource = resource.replaceAll(" ", "_");
 		
 		Pattern pattern = Pattern.compile("^"+resource+"$", Pattern.CASE_INSENSITIVE);
-		BasicDBObject query = new BasicDBObject(DBpediaLexicalizationsExtractor.RESOURCE_FIELD, pattern);
-		DBCursor cursor = rlcoll.find(query).sort(new BasicDBObject(DBpediaLexicalizationsExtractor.PMI_FIELD, -1)).limit(resultNum);
+		BasicDBObject query = new BasicDBObject(DBpediaLexicalizationsExtractor2.RESOURCE_FIELD, pattern);
+		DBCursor cursor = rlcoll.find(query).sort(new BasicDBObject(DBpediaLexicalizationsExtractor2.PMI_FIELD, -1)).limit(resultNum);
 		try {
 			while (cursor.hasNext()) {
-				double pmi = (Double)cursor.next().get(DBpediaLexicalizationsExtractor.PMI_FIELD);
-				String label = (String) cursor.curr().get(DBpediaLexicalizationsExtractor.LABEL_FIELD);
+				double pmi = (Double)cursor.next().get(DBpediaLexicalizationsExtractor2.PMI_FIELD);
+				String label = (String) cursor.curr().get(DBpediaLexicalizationsExtractor2.LABEL_FIELD);
 				Resource r = new Resource();
 				r.setTitle(label);
 				r.setUrl("");
@@ -110,12 +110,12 @@ public class SearchForCompare {
 		label = label.replaceAll(" ", "_");
 		
 		Pattern pattern = Pattern.compile("^"+label+"$", Pattern.CASE_INSENSITIVE);
-		BasicDBObject query = new BasicDBObject(DBpediaLexicalizationsExtractor.LABEL_FIELD, pattern);
-		DBCursor cursor = rlcoll.find(query).sort(new BasicDBObject(DBpediaLexicalizationsExtractor.RESOURCE_PROBABILITY_FIELD, -1)).limit(resultNum);
+		BasicDBObject query = new BasicDBObject(DBpediaLexicalizationsExtractor2.LABEL_FIELD, pattern);
+		DBCursor cursor = rlcoll.find(query).sort(new BasicDBObject(DBpediaLexicalizationsExtractor2.RESOURCE_PROBABILITY_FIELD, -1)).limit(resultNum);
 		try {
 			while (cursor.hasNext()) {
-				double prl = (Double)cursor.next().get(DBpediaLexicalizationsExtractor.RESOURCE_PROBABILITY_FIELD);
-				String resource = (String) cursor.curr().get(DBpediaLexicalizationsExtractor.RESOURCE_FIELD);
+				double prl = (Double)cursor.next().get(DBpediaLexicalizationsExtractor2.RESOURCE_PROBABILITY_FIELD);
+				String resource = (String) cursor.curr().get(DBpediaLexicalizationsExtractor2.RESOURCE_FIELD);
 				Resource r =  new Resource();
 				r.setTitle(resource);
 				String newkey = resource.replaceAll(" ", "_");
@@ -137,12 +137,12 @@ public class SearchForCompare {
 		label = label.replaceAll(" ", "_");
 		
 		Pattern pattern = Pattern.compile("^"+label+"$", Pattern.CASE_INSENSITIVE);
-		BasicDBObject query = new BasicDBObject(DBpediaLexicalizationsExtractor.LABEL_FIELD, pattern);
-		DBCursor cursor = rlcoll.find(query).sort(new BasicDBObject(DBpediaLexicalizationsExtractor.PMI_FIELD, -1)).limit(resultNum);
+		BasicDBObject query = new BasicDBObject(DBpediaLexicalizationsExtractor2.LABEL_FIELD, pattern);
+		DBCursor cursor = rlcoll.find(query).sort(new BasicDBObject(DBpediaLexicalizationsExtractor2.PMI_FIELD, -1)).limit(resultNum);
 		try {
 			while (cursor.hasNext()) {
-				double pmi = (Double)cursor.next().get(DBpediaLexicalizationsExtractor.PMI_FIELD);
-				String resource = (String) cursor.curr().get(DBpediaLexicalizationsExtractor.RESOURCE_FIELD);
+				double pmi = (Double)cursor.next().get(DBpediaLexicalizationsExtractor2.PMI_FIELD);
+				String resource = (String) cursor.curr().get(DBpediaLexicalizationsExtractor2.RESOURCE_FIELD);
 				Resource r =  new Resource();
 				r.setTitle(resource);
 				String newkey = resource.replaceAll(" ", "_");

@@ -66,7 +66,7 @@ public class IndexAction extends ActionSupport{
 		}
 		else if(type == 3){
 			SearchByWord wordSearcher = new SearchByWord(inlang, outlang, resultNum);
-			result = wordSearcher.getResult(input);
+			result = wordSearcher.getResult(input.toLowerCase());
 			if(result.getCrosslingual() != null || result.getRwCoOccurrencePrw()!=null || result.getRwCoOccurrencePmi()!=null){
 				if(outlang.equals("en") && compare == 1)
 					return "wordWithCompare";

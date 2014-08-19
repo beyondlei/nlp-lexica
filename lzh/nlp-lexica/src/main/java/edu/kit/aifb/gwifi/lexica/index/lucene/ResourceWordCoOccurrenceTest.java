@@ -42,11 +42,25 @@ public class ResourceWordCoOccurrenceTest {
 
 	// "configs/wikipedia-template-en.xml" "res/"
 	// "en" "stopwords/en-stopwords.txt"
+//	public static void main(String[] args) throws Exception {
+//		ResourceWordCoOccurrenceTest aw = new ResourceWordCoOccurrenceTest(args[0], args[1], args[2], args[3]);
+//		aw.process();
+//	}
+	
+	// "configs/wikipedia-template-en.xml" "res/"
+	// "en" "stopwords/en-stopwords.txt" "configs/NLPConfig.properties"
 	public static void main(String[] args) throws Exception {
-		ResourceWordCoOccurrenceTest aw = new ResourceWordCoOccurrenceTest(args[0], args[1], args[2], args[3]);
+		ResourceWordCoOccurrenceTest aw = new ResourceWordCoOccurrenceTest(args[0], args[1], args[2], args[3], args[4]);
 		aw.process();
 	}
 
+	public ResourceWordCoOccurrenceTest(String configPath, String indexPath, String lang, String stopwords,
+			String nlpConfigPath) throws Exception {
+		this(configPath, indexPath, lang, stopwords);
+		if (language.equals(Language.ZH))
+			ChineseSegmenter = new ChineseSegmenter(nlpConfigPath);
+	}
+	
 	public ResourceWordCoOccurrenceTest(String configPath, String outputPath, String lang, String stopwords)
 			throws Exception {
 		File databaseDirectory = new File(configPath);
@@ -60,9 +74,6 @@ public class ResourceWordCoOccurrenceTest {
 		multilingualAnalyzer = new MultiLingualAnalyzer();
 		multilingualAnalyzer.setStopwordFile(language.toString() + ":" + stopwords);
 		multilingualAnalyzer.setStemming(false);
-		
-		if(language.equals(Language.ZH))
-			ChineseSegmenter = new ChineseSegmenter("configs/NLPConfig.properties");
 	}
 
 	public void process() throws CorruptIndexException, IOException {
@@ -167,8 +178,6 @@ public class ResourceWordCoOccurrenceTest {
 		List<Map.Entry<K, V>> entries = new LinkedList<Map.Entry<K, V>>(map.entrySet());
 
 		Collections.sort(entries, new Comparator<Map.Entry<K, V>>() {
-
-			@Override
 			public int compare(Entry<K, V> o1, Entry<K, V> o2) {
 				return o2.getValue().compareTo(o1.getValue());
 			}

@@ -191,7 +191,7 @@ public class DBpediaLexicalizationsExtractor {
 		return resultMap;
 	}
 
-	// "/home/ws/oi1299/lexica/lexicalizations.pairThresh5.nq" "lexica"
+	// "/home/ws/oi1299/lexica/lexicalizations_en.nq" "lexica"
 	// "ResourceLabelCompare" "localhost" "19000"
 	public static void main(String[] args) {
 		try {

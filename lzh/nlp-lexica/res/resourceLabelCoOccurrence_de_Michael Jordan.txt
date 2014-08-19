@@ -1,0 +1,1713 @@
+============== Resource: Michael Jordan ==============
+Label: Michael Jordan,		Frequency: 271
+Label: Chicago Bulls,		Frequency: 110
+Label: NBA,		Frequency: 45
+Label: Basketball,		Frequency: 39
+Label: Scottie Pippen,		Frequency: 38
+Label: San Antonio Spurs,		Frequency: 31
+Label: New York Knicks,		Frequency: 30
+Label: Los Angeles Lakers,		Frequency: 28
+Label: Detroit Pistons,		Frequency: 28
+Label: Patrick Ewing,		Frequency: 28
+Label: Magic Johnson,		Frequency: 26
+Label: Phoenix Suns,		Frequency: 26
+Label: Dennis Rodman,		Frequency: 24
+Label: Kobe Bryant,		Frequency: 24
+Label: Houston Rockets,		Frequency: 23
+Label: Karl Malone,		Frequency: 22
+Label: Hakeem Olajuwon,		Frequency: 20
+Label: Utah Jazz,		Frequency: 19
+Label: Larry Bird,		Frequency: 19
+Label: Charles Barkley,		Frequency: 19
+Label: Miami Heat,		Frequency: 18
+Label: Atlanta Hawks,		Frequency: 18
+Label: Shaquille O’Neal,		Frequency: 17
+Label: Phil Jackson,		Frequency: 17
+Label: US-amerikanischer,		Frequency: 15
+Label: Indiana Pacers,		Frequency: 15
+Label: John Stockton,		Frequency: 14
+Label: Portland Trail Blazers,		Frequency: 14
+Label: David Robinson,		Frequency: 14
+Label: Dallas Mavericks,		Frequency: 14
+Label: Kareem Abdul-Jabbar,		Frequency: 14
+Label: Cleveland Cavaliers,		Frequency: 14
+Label: Tim Duncan,		Frequency: 13
+Label: Orlando Magic,		Frequency: 13
+Label: Naismith Memorial Basketball Hall of Fame,		Frequency: 13
+Label: Boston Celtics,		Frequency: 13
+Label: MVP,		Frequency: 13
+Label: Dream Team,		Frequency: 12
+Label: Golden State Warriors,		Frequency: 12
+Label: Play-off,		Frequency: 12
+Label: Rookie,		Frequency: 12
+Label: Chris Mullin,		Frequency: 12
+Label: Seattle SuperSonics,		Frequency: 11
+Label: Washington Wizards,		Frequency: 11
+Label: Dirk Nowitzki,		Frequency: 10
+Label: LeBron James,		Frequency: 10
+Label: Wilt Chamberlain,		Frequency: 10
+Label: Los Angeles,		Frequency: 10
+Label: NBA All-Star Game,		Frequency: 9
+Label: All-NBA First Team,		Frequency: 9
+Label: Coach of the Year,		Frequency: 9
+Label: USA,		Frequency: 9
+Label: Gary Payton,		Frequency: 8
+Label: Nike,		Frequency: 8
+Label: Dominique Wilkins,		Frequency: 8
+Label: Milwaukee Bucks,		Frequency: 8
+Label: Joe Dumars,		Frequency: 7
+Label: Los Angeles Clippers,		Frequency: 7
+Label: Philadelphia 76ers,		Frequency: 7
+Label: New Jersey Nets,		Frequency: 7
+Label: NCAA,		Frequency: 7
+Label: James Worthy,		Frequency: 7
+Label: Jason Kidd,		Frequency: 7
+Label: Power Forward,		Frequency: 7
+Label: Lakers,		Frequency: 7
+Label: Center,		Frequency: 7
+Label: Dunking,		Frequency: 6
+Label: New Orleans Hornets,		Frequency: 6
+Label: Larry Nance,		Frequency: 6
+Label: Michael Jackson,		Frequency: 6
+Label: Seattle Supersonics,		Frequency: 6
+Label: Charlotte Hornets,		Frequency: 6
+Label: NBA All-Rookie Team,		Frequency: 6
+Label: Denver Nuggets,		Frequency: 6
+Label: Space Jam,		Frequency: 6
+Label: Most Valuable Player,		Frequency: 6
+Label: Rebounds,		Frequency: 6
+Label: Point Guard,		Frequency: 6
+Label: Shooting Guard,		Frequency: 6
+Label: Toronto Raptors,		Frequency: 6
+Label: Grant Hill,		Frequency: 6
+Label: NBA All-Defensive First Team,		Frequency: 6
+Label: Detlef Schrempf,		Frequency: 6
+Label: Eastern Conference,		Frequency: 6
+Label: NBA All-Rookie First Team,		Frequency: 6
+Label: Duke University,		Frequency: 5
+Label: Barcelona 1992,		Frequency: 5
+Label: WNBA,		Frequency: 5
+Label: Dikembe Mutombo,		Frequency: 5
+Label: Saison 2005/06,		Frequency: 5
+Label: Christian Laettner,		Frequency: 5
+Label: Isiah Thomas,		Frequency: 5
+Label: NBA Draft,		Frequency: 5
+Label: Robert Horry,		Frequency: 5
+Label: Finals MVP,		Frequency: 5
+Label: ESPN,		Frequency: 5
+Label: Rookie of the Year,		Frequency: 5
+Label: Clyde Drexler,		Frequency: 5
+Label: Pat Riley,		Frequency: 5
+Label: Assist,		Frequency: 5
+Label: Reggie Miller,		Frequency: 5
+Label: Larry Johnson,		Frequency: 5
+Label: Best-of-Seven,		Frequency: 5
+Label: Dwight Howard,		Frequency: 5
+Label: Minnesota Timberwolves,		Frequency: 5
+Label: 1984,		Frequency: 5
+Label: Alvin Robertson,		Frequency: 5
+Label: 1965,		Frequency: 5
+Label: Tony Parker,		Frequency: 4
+Label: Vince Carter,		Frequency: 4
+Label: Kalifornien,		Frequency: 4
+Label: Defensive Player of the Year,		Frequency: 4
+Label: Sixth Man of the Year,		Frequency: 4
+Label: Olympischen Spielen 1992,		Frequency: 4
+Label: Jordan,		Frequency: 4
+Label: Sacramento Kings,		Frequency: 4
+Label: TNT,		Frequency: 4
+Label: Atlanta,		Frequency: 4
+Label: Alonzo Mourning,		Frequency: 4
+Label: Los Angeles 1984,		Frequency: 4
+Label: Barcelona,		Frequency: 4
+Label: Rick Barry,		Frequency: 4
+Label: Dwyane Wade,		Frequency: 4
+Label: Washington Bullets,		Frequency: 4
+Label: Slam Dunk Contest,		Frequency: 4
+Label: Most Improved Player,		Frequency: 4
+Label: Dražen Petrović,		Frequency: 4
+Label: Horace Grant,		Frequency: 4
+Label: Bob Cousy,		Frequency: 4
+Label: Julius Erving,		Frequency: 4
+Label: 2004,		Frequency: 4
+Label: 2003,		Frequency: 4
+Label: Jerry West,		Frequency: 4
+Label: Sam Perkins,		Frequency: 4
+Label: Volleyball,		Frequency: 4
+Label: 1990,		Frequency: 4
+Label: 1986,		Frequency: 4
+Label: 1987,		Frequency: 4
+Label: 1989,		Frequency: 4
+Label: 1992,		Frequency: 4
+Label: Tim Hardaway,		Frequency: 4
+Label: 1994,		Frequency: 4
+Label: 1999,		Frequency: 4
+Label: Angola,		Frequency: 4
+Label: Jerry Sloan,		Frequency: 4
+Label: Anfernee Hardaway,		Frequency: 4
+Label: 1963,		Frequency: 4
+Label: Olympischen Spielen,		Frequency: 3
+Label: Europa,		Frequency: 3
+Label: University of North Carolina,		Frequency: 3
+Label: Emeka Okafor,		Frequency: 3
+Label: Buck Williams,		Frequency: 3
+Label: New York City,		Frequency: 3
+Label: Mitch Richmond,		Frequency: 3
+Label: Brasilien,		Frequency: 3
+Label: Forward,		Frequency: 3
+Label: Ohio,		Frequency: 3
+Label: Western Conference,		Frequency: 3
+Label: Dan Majerle,		Frequency: 3
+Label: Rebound,		Frequency: 3
+Label: triple-double,		Frequency: 3
+Label: Playoff,		Frequency: 3
+Label: Philadelphia,		Frequency: 3
+Label: Pennsylvania,		Frequency: 3
+Label: Playoffs,		Frequency: 3
+Label: Air Jordan,		Frequency: 3
+Label: Eishockey,		Frequency: 3
+Label: Nicolas Mahler,		Frequency: 3
+Label: Kirk Hinrich,		Frequency: 3
+Label: 17. Februar,		Frequency: 3
+Label: David Stern,		Frequency: 3
+Label: Franchise,		Frequency: 3
+Label: Jugoslawien,		Frequency: 3
+Label: 18. Februar,		Frequency: 3
+Label: Larry Brown,		Frequency: 3
+Label: Shawn Kemp,		Frequency: 3
+Label: Kevin Garnett,		Frequency: 3
+Label: Lockout,		Frequency: 3
+Label: Memphis Grizzlies,		Frequency: 3
+Label: Tom Chambers,		Frequency: 3
+Label: New York,		Frequency: 3
+Label: Chicago,		Frequency: 3
+Label: Malone,		Frequency: 3
+Label: 16. Februar,		Frequency: 3
+Label: Doc Rivers,		Frequency: 3
+Label: NBA-Draft 1993,		Frequency: 3
+Label: Illinois,		Frequency: 3
+Label: Shawn Bradley,		Frequency: 3
+Label: Vereinigte Staaten,		Frequency: 3
+Label: All-Star Game,		Frequency: 3
+Label: NBC,		Frequency: 3
+Label: Kevin McHale,		Frequency: 3
+Label: Mark Price,		Frequency: 3
+Label: Houston,		Frequency: 3
+Label: Jeff Hornacek,		Frequency: 3
+Label: 1972,		Frequency: 3
+Label: Highschool,		Frequency: 3
+Label: 1985,		Frequency: 3
+Label: 1996,		Frequency: 3
+Label: 1991,		Frequency: 3
+Label: 1993,		Frequency: 3
+Label: NBA Draft 2004,		Frequency: 3
+Label: Washington, D.C.,		Frequency: 3
+Label: New Jersey,		Frequency: 3
+Label: Sportler des Jahres,		Frequency: 3
+Label: Madison Square Garden,		Frequency: 3
+Label: High School,		Frequency: 3
+Label: 1962,		Frequency: 3
+Label: 1961,		Frequency: 3
+Label: Dolph Schayes,		Frequency: 2
+Label: Ray Allen,		Frequency: 2
+Label: NBA Most Valuable Player Award,		Frequency: 2
+Label: Auszeit,		Frequency: 2
+Label: Pippen,		Frequency: 2
+Label: Fernando Romay,		Frequency: 2
+Label: Baseball,		Frequency: 2
+Label: Pelé,		Frequency: 2
+Label: American Airlines Arena,		Frequency: 2
+Label: Cedric Ceballos,		Frequency: 2
+Label: Connecticut,		Frequency: 2
+Label: Anthony Mason,		Frequency: 2
+Label: Benoit Benjamin,		Frequency: 2
+Label: FIBA,		Frequency: 2
+Label: Aaron Williams,		Frequency: 2
+Label: Osten,		Frequency: 2
+Label: Malcolm X,		Frequency: 2
+Label: Doug Christie,		Frequency: 2
+Label: Kerstin Monica Äijä Lenndin,		Frequency: 2
+Label: Gerhard Haderer,		Frequency: 2
+Label: Westen,		Frequency: 2
+Label: ABC,		Frequency: 2
+Label: Steve Timmons,		Frequency: 2
+Label: Olympischen Spielen 1984,		Frequency: 2
+Label: Vlade Divac,		Frequency: 2
+Label: Fernando Martín,		Frequency: 2
+Label: Bill Russell,		Frequency: 2
+Label: National Basketball Association,		Frequency: 2
+Label: Saison 1998/99,		Frequency: 2
+Label: Triple Double,		Frequency: 2
+Label: Schauspieler,		Frequency: 2
+Label: Regular Season,		Frequency: 2
+Label: Eric Sato,		Frequency: 2
+Label: NBA Finals,		Frequency: 2
+Label: Triple-Double,		Frequency: 2
+Label: Olympischen Sommerspielen 1972,		Frequency: 2
+Label: Playoffspiel,		Frequency: 2
+Label: Ben Gordon,		Frequency: 2
+Label: Andrés Nocioni,		Frequency: 2
+Label: College,		Frequency: 2
+Label: Dee Brown,		Frequency: 2
+Label: Kanada,		Frequency: 2
+Label: Bob Pettit,		Frequency: 2
+Label: Kevin Johnson,		Frequency: 2
+Label: FIBA Hall of Fame,		Frequency: 2
+Label: Tracy McGrady,		Frequency: 2
+Label: All-Star,		Frequency: 2
+Label: 2K Sports,		Frequency: 2
+Label: Montreal 1976,		Frequency: 2
+Label: Nate Robinson,		Frequency: 2
+Label: NBA Drafts,		Frequency: 2
+Label: Sam Bowie,		Frequency: 2
+Label: Olympischen Sommerspielen 2008,		Frequency: 2
+Label: Robert Ruark,		Frequency: 2
+Label: NBA-Saison 1990/91,		Frequency: 2
+Label: Aufbauspieler,		Frequency: 2
+Label: Doug Collins,		Frequency: 2
+Label: Tyson Chandler,		Frequency: 2
+Label: Elton Brand,		Frequency: 2
+Label: Eric Williams,		Frequency: 2
+Label: Guard,		Frequency: 2
+Label: Werbespot,		Frequency: 2
+Label: Sports Illustrated,		Frequency: 2
+Label: Heinz Wolf,		Frequency: 2
+Label: NBA All-Rookie Second Team,		Frequency: 2
+Label: Carmelo Anthony,		Frequency: 2
+Label: Dallas,		Frequency: 2
+Label: Johnson,		Frequency: 2
+Label: Saison 2006/07,		Frequency: 2
+Label: Kevin Durant,		Frequency: 2
+Label: Luol Deng,		Frequency: 2
+Label: Charlotte Bobcats,		Frequency: 2
+Label: Elgin Baylor,		Frequency: 2
+Label: New York Times,		Frequency: 2
+Label: Knie,		Frequency: 2
+Label: Henrik Rödl,		Frequency: 2
+Label: Antonio McDyess,		Frequency: 2
+Label: Ron Artest,		Frequency: 2
+Label: Finals-MVP,		Frequency: 2
+Label: Nigeria,		Frequency: 2
+Label: Eddy Curry,		Frequency: 2
+Label: Vietnamkrieg,		Frequency: 2
+Label: Saison 2004/05,		Frequency: 2
+Label: Oklahoma City Thunder,		Frequency: 2
+Label: Seoul 1988,		Frequency: 2
+Label: Muggsy Bogues,		Frequency: 2
+Label: NBA-Draft 2009,		Frequency: 2
+Label: Bill Laimbeer,		Frequency: 2
+Label: Tyreke Evans,		Frequency: 2
+Label: tonto,		Frequency: 2
+Label: Visual Concepts,		Frequency: 2
+Label: Pervis Ellison,		Frequency: 2
+Label: Brent Barry,		Frequency: 2
+Label: Spiel,		Frequency: 2
+Label: Italien,		Frequency: 2
+Label: NBA-Draft 1986,		Frequency: 2
+Label: NBA-Draft 1984,		Frequency: 2
+Label: North Carolina,		Frequency: 2
+Label: Mychal Judge,		Frequency: 2
+Label: Olympischen Sommerspielen 1992,		Frequency: 2
+Label: Olympischen Sommerspielen 1996,		Frequency: 2
+Label: Kenny Walker,		Frequency: 2
+Label: NBA Sixth Man of the Year Award,		Frequency: 2
+Label: Deron Williams,		Frequency: 2
+Label: NBA Defensive Player of the Year,		Frequency: 2
+Label: NBA-Saison 2010/2011,		Frequency: 2
+Label: All-Star-Team,		Frequency: 2
+Label: München,		Frequency: 2
+Label: Saison 2009/10,		Frequency: 2
+Label: New Orleans,		Frequency: 2
+Label: 2008,		Frequency: 2
+Label: 2005,		Frequency: 2
+Label: Springfield,		Frequency: 2
+Label: Glen Rice,		Frequency: 2
+Label: Rookie des Jahres,		Frequency: 2
+Label: Miami,		Frequency: 2
+Label: Don Nelson,		Frequency: 2
+Label: Ray Charles,		Frequency: 2
+Label: US-Dollar,		Frequency: 2
+Label: Oscar Robertson,		Frequency: 2
+Label: Charlotte,		Frequency: 2
+Label: Small Forward,		Frequency: 2
+Label: NBA-Playoffs,		Frequency: 2
+Label: Don Chaney,		Frequency: 2
+Label: Chris Paul,		Frequency: 2
+Label: Hubie Brown,		Frequency: 2
+Label: NFL,		Frequency: 2
+Label: NBA Rookie of the Year,		Frequency: 2
+Label: Jordan, Michael,		Frequency: 2
+Label: EM 1983,		Frequency: 2
+Label: Scott Skiles,		Frequency: 2
+Label: Steve Prefontaine,		Frequency: 2
+Label: EM 1991,		Frequency: 2
+Label: Dražen Dalipagić,		Frequency: 2
+Label: Ron Harper,		Frequency: 2
+Label: Teresa Edwards,		Frequency: 2
+Label: Chris Duhon,		Frequency: 2
+Label: Spud Webb,		Frequency: 2
+Label: Brose Baskets Bamberg,		Frequency: 2
+Label: Dayton,		Frequency: 2
+Label: Sportsimulation,		Frequency: 2
+Label: Portland Trailblazers,		Frequency: 2
+Label: 1970,		Frequency: 2
+Label: 1988,		Frequency: 2
+Label: Kniescheibe,		Frequency: 2
+Label: 1995,		Frequency: 2
+Label: Philips Arena,		Frequency: 2
+Label: Expansion Draft,		Frequency: 2
+Label: Celtics,		Frequency: 2
+Label: US-amerikanische,		Frequency: 2
+Label: General,		Frequency: 2
+Label: Ajax Amsterdam,		Frequency: 2
+Label: Karsten Bäron,		Frequency: 2
+Label: UCLA,		Frequency: 2
+Label: Earl Monroe,		Frequency: 2
+Label: Charles Oakley,		Frequency: 2
+Label: Norah Jones,		Frequency: 2
+Label: Bird,		Frequency: 2
+Label: Best-of-Five,		Frequency: 2
+Label: Dean Smith,		Frequency: 2
+Label: wertvollsten Spieler,		Frequency: 2
+Label: Juan Antonio Corbalán,		Frequency: 2
+Label: Martina Navrátilová,		Frequency: 2
+Label: 1966,		Frequency: 2
+Label: 1964,		Frequency: 2
+Label: 1960,		Frequency: 2
+Label: Streetball,		Frequency: 2
+Label: Bill Clinton,		Frequency: 1
+Label: Entry Draft,		Frequency: 1
+Label: Michael Sweetney,		Frequency: 1
+Label: NBA-Drafts 2003,		Frequency: 1
+Label: University of Pennsylvania,		Frequency: 1
+Label: Windmühle,		Frequency: 1
+Label: Scott Brooks,		Frequency: 1
+Label: Naismith Legacy Award,		Frequency: 1
+Label: Plattenlabel,		Frequency: 1
+Label: Cynthia Cooper,		Frequency: 1
+Label: 936,		Frequency: 1
+Label: Craig Wilson,		Frequency: 1
+Label: Philips,		Frequency: 1
+Label: 30. August,		Frequency: 1
+Label: Sean May,		Frequency: 1
+Label: Ariane Ehrat,		Frequency: 1
+Label: Laudatio,		Frequency: 1
+Label: Hidayet Türkoğlu,		Frequency: 1
+Label: Angelika Niebler,		Frequency: 1
+Label: Hillary Clinton,		Frequency: 1
+Label: ARS,		Frequency: 1
+Label: Damon Wayans,		Frequency: 1
+Label: Bremerhaven,		Frequency: 1
+Label: 31. Juli,		Frequency: 1
+Label: Frontcourt,		Frequency: 1
+Label: HIV-Infektion,		Frequency: 1
+Label: Salate,		Frequency: 1
+Label: Tonassistent,		Frequency: 1
+Label: Brendan Haywood,		Frequency: 1
+Label: Abdul-Jabbar,		Frequency: 1
+Label: Partnerstadt,		Frequency: 1
+Label: 15. Februar,		Frequency: 1
+Label: SuperSonics,		Frequency: 1
+Label: Cypress Hill,		Frequency: 1
+Label: Johann II.,		Frequency: 1
+Label: Blake Griffin,		Frequency: 1
+Label: Jens Harder,		Frequency: 1
+Label: Soul Asylum,		Frequency: 1
+Label: P. J. Brown,		Frequency: 1
+Label: Spinnen,		Frequency: 1
+Label: Jacqueline Kennedy Onassis,		Frequency: 1
+Label: Frank Layden,		Frequency: 1
+Label: A. C. Green,		Frequency: 1
+Label: Marlies Askamp,		Frequency: 1
+Label: Airport (Diskothek),		Frequency: 1
+Label: Fastbreak,		Frequency: 1
+Label: Brent William Hilliard,		Frequency: 1
+Label: Iggy Pop,		Frequency: 1
+Label: Universität von Alberta,		Frequency: 1
+Label: Krieges,		Frequency: 1
+Label: Uwe Blab,		Frequency: 1
+Label: John Paxson,		Frequency: 1
+Label: Atlanta 1996,		Frequency: 1
+Label: Al Jefferson,		Frequency: 1
+Label: J. Walter Kennedy Citizenship Award,		Frequency: 1
+Label: Ehrenhalle für Basketballer,		Frequency: 1
+Label: Yard,		Frequency: 1
+Label: David Thompson,		Frequency: 1
+Label: Broccoli,		Frequency: 1
+Label: Steve Nash,		Frequency: 1
+Label: Anchorman,		Frequency: 1
+Label: Merchandise,		Frequency: 1
+Label: Jonathan Root,		Frequency: 1
+Label: NBA-Draft,		Frequency: 1
+Label: Alba Berlin,		Frequency: 1
+Label: Bill Sharman,		Frequency: 1
+Label: Oakland Oaks,		Frequency: 1
+Label: kalifornische,		Frequency: 1
+Label: Premiata Montegranaro,		Frequency: 1
+Label: Aaron Spelling,		Frequency: 1
+Label: College Football,		Frequency: 1
+Label: First Union Center,		Frequency: 1
+Label: The Sword Project,		Frequency: 1
+Label: NBA All-Star-Game,		Frequency: 1
+Label: Urban Legend,		Frequency: 1
+Label: Triangle offense,		Frequency: 1
+Label: Chicago Hope,		Frequency: 1
+Label: Xavier McDaniel,		Frequency: 1
+Label: Sharon Stone,		Frequency: 1
+Label: San Diego Rockets,		Frequency: 1
+Label: R. Kelly,		Frequency: 1
+Label: NBA Rookie Challenge,		Frequency: 1
+Label: 21. August,		Frequency: 1
+Label: Eddie,		Frequency: 1
+Label: Filmschauspieler,		Frequency: 1
+Label: Echt super, Mr. Cooper,		Frequency: 1
+Label: Caron Butler,		Frequency: 1
+Label: Ted Stepien,		Frequency: 1
+Label: Doublegewinner,		Frequency: 1
+Label: Sam Cassell,		Frequency: 1
+Label: Barbie-Puppen,		Frequency: 1
+Label: deutschen Fußballnationalmannschaft,		Frequency: 1
+Label: Oakland Raiders,		Frequency: 1
+Label: Yohani Kinyala Lauwo,		Frequency: 1
+Label: Flügelspieler,		Frequency: 1
+Label: 1892,		Frequency: 1
+Label: Phantoms Braunschweig,		Frequency: 1
+Label: Hip-Hop,		Frequency: 1
+Label: Raffetseder,		Frequency: 1
+Label: Gatorade,		Frequency: 1
+Label: Stürmer,		Frequency: 1
+Label: Clarissa Davis,		Frequency: 1
+Label: Forest Lawn Memorial Park,		Frequency: 1
+Label: Manchester City,		Frequency: 1
+Label: Rotluchs,		Frequency: 1
+Label: Collective Bargaining Agreement,		Frequency: 1
+Label: Deutschland,		Frequency: 1
+Label: George Lynch,		Frequency: 1
+Label: New York Yankees,		Frequency: 1
+Label: Lyndon B. Johnson,		Frequency: 1
+Label: Komponist,		Frequency: 1
+Label: New England Patriots,		Frequency: 1
+Label: Sommerspielen 2012,		Frequency: 1
+Label: Kokain,		Frequency: 1
+Label: Nancy Lieberman,		Frequency: 1
+Label: NBA Allstar,		Frequency: 1
+Label: Steve McManaman,		Frequency: 1
+Label: Stockton,		Frequency: 1
+Label: NBA-Saison 1990/1991,		Frequency: 1
+Label: Olympiateilnehmer,		Frequency: 1
+Label: Texas City,		Frequency: 1
+Label: Buzzer Beater,		Frequency: 1
+Label: nationales Schutzgebiet innerhalb der USA,		Frequency: 1
+Label: Playoff-Finale,		Frequency: 1
+Label: Jeffrey Campbell,		Frequency: 1
+Label: Phoenix,		Frequency: 1
+Label: Earvin “Magic” Johnson,		Frequency: 1
+Label: Albert I.,		Frequency: 1
+Label: Twin Ring Motegi,		Frequency: 1
+Label: Bob Davies,		Frequency: 1
+Label: Knoxville,		Frequency: 1
+Label: Lauren Jackson,		Frequency: 1
+Label: Buckethead,		Frequency: 1
+Label: deutsche U21-Nationalmannschaft,		Frequency: 1
+Label: Twins – Zwillinge,		Frequency: 1
+Label: Karen Shelton,		Frequency: 1
+Label: WM 1982,		Frequency: 1
+Label: Wellblechpalast,		Frequency: 1
+Label: Derek Anderson,		Frequency: 1
+Label: Volker Engel,		Frequency: 1
+Label: Andrew Gaze,		Frequency: 1
+Label: 1889,		Frequency: 1
+Label: Solvita Āboltiņa,		Frequency: 1
+Label: Takeshi Kitano,		Frequency: 1
+Label: Taser,		Frequency: 1
+Label: 1887,		Frequency: 1
+Label: europäische,		Frequency: 1
+Label: Frankreich,		Frequency: 1
+Label: 1882,		Frequency: 1
+Label: schwarz-rot-goldenem,		Frequency: 1
+Label: 1883,		Frequency: 1
+Label: Robbins,		Frequency: 1
+Label: WM 1994,		Frequency: 1
+Label: David Johansen,		Frequency: 1
+Label: Robert Ctvrtlik,		Frequency: 1
+Label: Sarah Marbeck,		Frequency: 1
+Label: NBA-Saison 1991/92,		Frequency: 1
+Label: NBA Most Improved Player,		Frequency: 1
+Label: Kibo,		Frequency: 1
+Label: wertvollster Spieler,		Frequency: 1
+Label: Southeast Division,		Frequency: 1
+Label: Tamia,		Frequency: 1
+Label: Montréal,		Frequency: 1
+Label: North Carolina State University,		Frequency: 1
+Label: Olympischen Spielen von Sydney im Jahr 2000,		Frequency: 1
+Label: VII. Olympischen Sommerspiele,		Frequency: 1
+Label: ewigen NBA-Rangliste,		Frequency: 1
+Label: Jackie Robinson,		Frequency: 1
+Label: Patricia Head,		Frequency: 1
+Label: Jugendschutz,		Frequency: 1
+Label: Andrei Witaljewitsch Korotajew,		Frequency: 1
+Label: Wayne Gretzky,		Frequency: 1
+Label: Hamburger,		Frequency: 1
+Label: Basketballspieler,		Frequency: 1
+Label: British Academy Film Award,		Frequency: 1
+Label: Saison 2007/08,		Frequency: 1
+Label: NBA Coach of the Year Award,		Frequency: 1
+Label: Memphis,		Frequency: 1
+Label: BG 74 Göttingen,		Frequency: 1
+Label: Bronko Nagurski,		Frequency: 1
+Label: 16. September,		Frequency: 1
+Label: Julius „Dr. J“ Erving,		Frequency: 1
+Label: Avery Johnson,		Frequency: 1
+Label: Daedra Charles,		Frequency: 1
+Label: Gare Saint-Lazare,		Frequency: 1
+Label: Paddy Schmidt,		Frequency: 1
+Label: Aïr,		Frequency: 1
+Label: Pietro Aretino,		Frequency: 1
+Label: Polen,		Frequency: 1
+Label: Suzanne McConnell,		Frequency: 1
+Label: Lena Horne,		Frequency: 1
+Label: As-Sulami,		Frequency: 1
+Label: Bass,		Frequency: 1
+Label: Stuart Elliot,		Frequency: 1
+Label: Weltmeisterschaft 1982,		Frequency: 1
+Label: Teri Garr,		Frequency: 1
+Label: Personenstunde,		Frequency: 1
+Label: Hans Meyer,		Frequency: 1
+Label: Genf,		Frequency: 1
+Label: Blackjack,		Frequency: 1
+Label: Sänger,		Frequency: 1
+Label: Olympischen Sommerspiele in Barcelona,		Frequency: 1
+Label: Chaka Khan,		Frequency: 1
+Label: Griechenland,		Frequency: 1
+Label: Antwerpen,		Frequency: 1
+Label: Toni Kukoč,		Frequency: 1
+Label: 2007 World Series of Poker,		Frequency: 1
+Label: 11.Septembers,		Frequency: 1
+Label: ABA,		Frequency: 1
+Label: Derrick McKey,		Frequency: 1
+Label: ABL,		Frequency: 1
+Label: Vancouver,		Frequency: 1
+Label: Slash,		Frequency: 1
+Label: Honda,		Frequency: 1
+Label: Afrikameister,		Frequency: 1
+Label: Frederick Arthur Stanley, 16. Earl of Derby,		Frequency: 1
+Label: Taco Bell,		Frequency: 1
+Label: 9. September,		Frequency: 1
+Label: Boston Bruins,		Frequency: 1
+Label: Bryan Eric Ivie,		Frequency: 1
+Label: Shimon Peres,		Frequency: 1
+Label: San Epifanio,		Frequency: 1
+Label: Levi Strauss & Co.,		Frequency: 1
+Label: Verona,		Frequency: 1
+Label: Eisbären Berlin,		Frequency: 1
+Label: UNO-Generalsekretär,		Frequency: 1
+Label: Olympischen Spielen 1980,		Frequency: 1
+Label: Black Panther,		Frequency: 1
+Label: Olympischen Spielen 1972,		Frequency: 1
+Label: Meg Ryan,		Frequency: 1
+Label: Speisekarte,		Frequency: 1
+Label: Jordan, Max,		Frequency: 1
+Label: Martin Behaim,		Frequency: 1
+Label: Scout,		Frequency: 1
+Label: NBA-Saison 1995/96,		Frequency: 1
+Label: Paradies,		Frequency: 1
+Label: Ernie Grunfeld,		Frequency: 1
+Label: EM-Endrunde 1985,		Frequency: 1
+Label: Adam Elsheimer,		Frequency: 1
+Label: NBA-Saison 2006/07,		Frequency: 1
+Label: Fort Lewis,		Frequency: 1
+Label: 3. Oktober,		Frequency: 1
+Label: Christopher Duplanty,		Frequency: 1
+Label: Got Milk,		Frequency: 1
+Label: Scott Fortune,		Frequency: 1
+Label: Richard Jordan,		Frequency: 1
+Label: Scarface,		Frequency: 1
+Label: Erstligisten,		Frequency: 1
+Label: Bank,		Frequency: 1
+Label: 1995/96,		Frequency: 1
+Label: Männer-Basketball-Europameisterschaft,		Frequency: 1
+Label: In Search of The,		Frequency: 1
+Label: niederländischen,		Frequency: 1
+Label: David Falk,		Frequency: 1
+Label: Team USA,		Frequency: 1
+Label: University of Connecticut,		Frequency: 1
+Label: Saison 1989/90,		Frequency: 1
+Label: Amway Center,		Frequency: 1
+Label: Hankyu Braves,		Frequency: 1
+Label: Howard Eisley,		Frequency: 1
+Label: Quarterback,		Frequency: 1
+Label: "Benji" Wilson,		Frequency: 1
+Label: NBA Draft 1997,		Frequency: 1
+Label: Ubuntu,		Frequency: 1
+Label: Looney Tunes,		Frequency: 1
+Label: Centers,		Frequency: 1
+Label: Basketball-Wettbewerbe,		Frequency: 1
+Label: Trend,		Frequency: 1
+Label: Fußballfan,		Frequency: 1
+Label: Dan Rather,		Frequency: 1
+Label: Musikvideo,		Frequency: 1
+Label: Jerry Stackhouse,		Frequency: 1
+Label: Peter Blake,		Frequency: 1
+Label: Schlagzeug,		Frequency: 1
+Label: Teresa Weatherspoon,		Frequency: 1
+Label: Kansas,		Frequency: 1
+Label: Olympischen Winterspiele 2014,		Frequency: 1
+Label: s.Oliver Baskets,		Frequency: 1
+Label: University of Notre Dame,		Frequency: 1
+Label: Michael-Jordan,		Frequency: 1
+Label: ATP-Tour,		Frequency: 1
+Label: Mark Eaton,		Frequency: 1
+Label: Mike Patton,		Frequency: 1
+Label: Cindy Noble,		Frequency: 1
+Label: Playstation 2,		Frequency: 1
+Label: Ed Macauley,		Frequency: 1
+Label: geblockten Würfen,		Frequency: 1
+Label: Laurie Cunningham,		Frequency: 1
+Label: Arnold Schwarzenegger,		Frequency: 1
+Label: Antawn Jamison,		Frequency: 1
+Label: Gwen Cheeseman,		Frequency: 1
+Label: Black Mountain,		Frequency: 1
+Label: K-219,		Frequency: 1
+Label: Dangerous,		Frequency: 1
+Label: NBA-Saison 2004/2005,		Frequency: 1
+Label: 19. Oktober,		Frequency: 1
+Label: Bobby Jones,		Frequency: 1
+Label: Comic,		Frequency: 1
+Label: Andre Agassi,		Frequency: 1
+Label: Leon Wood,		Frequency: 1
+Label: Amsterdam,		Frequency: 1
+Label: Hockey,		Frequency: 1
+Label: Rodney Rogers,		Frequency: 1
+Label: Eddie Gottlieb,		Frequency: 1
+Label: Kilimanjaro,		Frequency: 1
+Label: William W. J. Kelly,		Frequency: 1
+Label: American Express,		Frequency: 1
+Label: Robert Douglas Partie,		Frequency: 1
+Label: Slam Dunk,		Frequency: 1
+Label: Vereinten Nationen,		Frequency: 1
+Label: Scott Thomas Fortune,		Frequency: 1
+Label: Flipperautomat,		Frequency: 1
+Label: Ban Ki-moon,		Frequency: 1
+Label: Olympiasieger,		Frequency: 1
+Label: Raúl,		Frequency: 1
+Label: MVP der NBA Finals,		Frequency: 1
+Label: Basketballschuhe,		Frequency: 1
+Label: Greg Ostertag,		Frequency: 1
+Label: Milwaukee,		Frequency: 1
+Label: EuroChallenge,		Frequency: 1
+Label: Elliot, das Schmunzelmonster,		Frequency: 1
+Label: Saison 1992/93,		Frequency: 1
+Label: Kultstatus,		Frequency: 1
+Label: Allan Houston,		Frequency: 1
+Label: Comedian,		Frequency: 1
+Label: Wayman Tisdale,		Frequency: 1
+Label: Cotton Fitzsimmons,		Frequency: 1
+Label: Restaurant,		Frequency: 1
+Label: Schlange,		Frequency: 1
+Label: Medina Dixon,		Frequency: 1
+Label: University of Southern Mississippi,		Frequency: 1
+Label: Wenzel III.,		Frequency: 1
+Label: Alan Moore,		Frequency: 1
+Label: Detroit Lions,		Frequency: 1
+Label: The Ritual,		Frequency: 1
+Label: Heather Juergensen,		Frequency: 1
+Label: 1319,		Frequency: 1
+Label: Weltgymnasiade,		Frequency: 1
+Label: Bernd Pfarr,		Frequency: 1
+Label: Lusia Harris,		Frequency: 1
+Label: Videoclip,		Frequency: 1
+Label: Vereintes Team,		Frequency: 1
+Label: 22. Juni,		Frequency: 1
+Label: Wesley Snipes,		Frequency: 1
+Label: Howard Stern,		Frequency: 1
+Label: Ralph Klein,		Frequency: 1
+Label: Litauen,		Frequency: 1
+Label: Mississippi,		Frequency: 1
+Label: 1970er,		Frequency: 1
+Label: John Wall,		Frequency: 1
+Label: Thomas Wolfe,		Frequency: 1
+Label: 1710,		Frequency: 1
+Label: 1712,		Frequency: 1
+Label: HIV,		Frequency: 1
+Label: Dollar,		Frequency: 1
+Label: Billy Wright,		Frequency: 1
+Label: Juanita Jordan,		Frequency: 1
+Label: 90er,		Frequency: 1
+Label: David Copperfield,		Frequency: 1
+Label: Sport-Agenten,		Frequency: 1
+Label: Universiade,		Frequency: 1
+Label: FC Barcelona,		Frequency: 1
+Label: Ruhmeshalle,		Frequency: 1
+Label: Juliene Simpson,		Frequency: 1
+Label: NBA Defensive Player of the Year Award,		Frequency: 1
+Label: Mazda,		Frequency: 1
+Label: 1987/88,		Frequency: 1
+Label: Christian Wulff,		Frequency: 1
+Label: Mitchell Kupchak,		Frequency: 1
+Label: NBA Playoffs 2013,		Frequency: 1
+Label: Jay-Z,		Frequency: 1
+Label: British Columbia,		Frequency: 1
+Label: Cherokee,		Frequency: 1
+Label: JMA-Magnituden-Skala,		Frequency: 1
+Label: silbernen Lorbeerblatts,		Frequency: 1
+Label: Mario Elie,		Frequency: 1
+Label: Carlos Boozer,		Frequency: 1
+Label: Rippchen,		Frequency: 1
+Label: 17. März,		Frequency: 1
+Label: Robert Lewis Samuelson,		Frequency: 1
+Label: Cheryl Miller,		Frequency: 1
+Label: Soldier Boyz,		Frequency: 1
+Label: Olympia-Auswahl,		Frequency: 1
+Label: Dan Reed,		Frequency: 1
+Label: Lea Henry,		Frequency: 1
+Label: Nick Anderson,		Frequency: 1
+Label: Paul Westhead,		Frequency: 1
+Label: Bobby Jackson,		Frequency: 1
+Label: Jennifer Hudson,		Frequency: 1
+Label: Nathan Lane,		Frequency: 1
+Label: Kimberly Denise Jones,		Frequency: 1
+Label: Die tollkühne Hexe in ihrem fliegenden Bett,		Frequency: 1
+Label: Linux,		Frequency: 1
+Label: Wurf,		Frequency: 1
+Label: Arne Bellstorf,		Frequency: 1
+Label: Iturriaga,		Frequency: 1
+Label: Walter Cronkite,		Frequency: 1
+Label: Die totale Erinnerung – Total Recall,		Frequency: 1
+Label: Jerry Maguire,		Frequency: 1
+Label: Cincinnati Masters,		Frequency: 1
+Label: Concord,		Frequency: 1
+Label: Jordan, Mark,		Frequency: 1
+Label: Delonte West,		Frequency: 1
+Label: Judy Strong,		Frequency: 1
+Label: Sixth Man Award,		Frequency: 1
+Label: NBA-Champion,		Frequency: 1
+Label: Ann Meyers,		Frequency: 1
+Label: Jeffrey Stork,		Frequency: 1
+Label: Cleveland Indians,		Frequency: 1
+Label: Steve Jobs,		Frequency: 1
+Label: Timothy McVeigh,		Frequency: 1
+Label: Pacers,		Frequency: 1
+Label: EM-Finale,		Frequency: 1
+Label: Fankurve,		Frequency: 1
+Label: Michael „Air“ Jordan,		Frequency: 1
+Label: Kult,		Frequency: 1
+Label: Jordan, Montell,		Frequency: 1
+Label: Bryant,		Frequency: 1
+Label: 1984er Draft,		Frequency: 1
+Label: Europameisterschaften,		Frequency: 1
+Label: Punkbands,		Frequency: 1
+Label: Saison 2012/13,		Frequency: 1
+Label: Helen Keller,		Frequency: 1
+Label: New Mexico,		Frequency: 1
+Label: Monster Magnet,		Frequency: 1
+Label: Gary Sinise,		Frequency: 1
+Label: Continental Basketball Association,		Frequency: 1
+Label: Darko Milicic,		Frequency: 1
+Label: ewigen NBA-Scorer-Liste,		Frequency: 1
+Label: Kent Benson,		Frequency: 1
+Label: Chris Gatling,		Frequency: 1
+Label: Schauspielerin,		Frequency: 1
+Label: Saison 1999/2000,		Frequency: 1
+Label: Wels,		Frequency: 1
+Label: Triple-double,		Frequency: 1
+Label: Danica Patrick,		Frequency: 1
+Label: 2005/06,		Frequency: 1
+Label: Nation of Islam,		Frequency: 1
+Label: Chapel Hill,		Frequency: 1
+Label: Deutschen Ruderverband,		Frequency: 1
+Label: Das Wunder von Manhattan,		Frequency: 1
+Label: Randall Cunningham,		Frequency: 1
+Label: Gitarre,		Frequency: 1
+Label: NBA All-Star Team,		Frequency: 1
+Label: University of California,		Frequency: 1
+Label: Arthur Ashe,		Frequency: 1
+Label: Saison 1997/98,		Frequency: 1
+Label: Helmut Jahn,		Frequency: 1
+Label: Samples,		Frequency: 1
+Label: Staples Center,		Frequency: 1
+Label: Köln,		Frequency: 1
+Label: Moskauer Spiele 1980,		Frequency: 1
+Label: 2010/11,		Frequency: 1
+Label: Indianapolis 2002,		Frequency: 1
+Label: Backstein,		Frequency: 1
+Label: Bobby Knight,		Frequency: 1
+Label: Westbevern,		Frequency: 1
+Label: Kevin Robertson,		Frequency: 1
+Label: Hasheem Thabeet,		Frequency: 1
+Label: NBA-Saison 1991/1992,		Frequency: 1
+Label: Freiwurflinie,		Frequency: 1
+Label: Fußball-Europameisterschaft 2012,		Frequency: 1
+Label: Buffalo Braves,		Frequency: 1
+Label: American-Football-Spieler,		Frequency: 1
+Label: Public Enemy,		Frequency: 1
+Label: NBA Executive of the Year Award,		Frequency: 1
+Label: All-Star-Games,		Frequency: 1
+Label: Gabrielle Union,		Frequency: 1
+Label: Oscar,		Frequency: 1
+Label: DEL,		Frequency: 1
+Label: 210 v. Chr.,		Frequency: 1
+Label: Anke Feuchtenberger,		Frequency: 1
+Label: Rush Limbaugh,		Frequency: 1
+Label: Musikclips,		Frequency: 1
+Label: Christine Larson-Mason,		Frequency: 1
+Label: Louisiana Tech University,		Frequency: 1
+Label: NBA-Saison 2005/06,		Frequency: 1
+Label: Gregory Boyer,		Frequency: 1
+Label: Internationalen Schulsport-Föderation,		Frequency: 1
+Label: Daniel Robert Greenbaum,		Frequency: 1
+Label: Bundespräsident,		Frequency: 1
+Label: William Buckner,		Frequency: 1
+Label: Mary Decker,		Frequency: 1
+Label: Watchmen,		Frequency: 1
+Label: Calvin Murphy,		Frequency: 1
+Label: Pepsi Center,		Frequency: 1
+Label: Matt Carroll,		Frequency: 1
+Label: Cedric Maxwell,		Frequency: 1
+Label: Konsortium,		Frequency: 1
+Label: Bad Religion,		Frequency: 1
+Label: AT&T Center,		Frequency: 1
+Label: Amerikanische Jungferninseln,		Frequency: 1
+Label: Cleveland,		Frequency: 1
+Label: Mäusejagd,		Frequency: 1
+Label: Kosovo,		Frequency: 1
+Label: Minnesota Wild,		Frequency: 1
+Label: Sophia,		Frequency: 1
+Label: Rasheed Wallace,		Frequency: 1
+Label: Charles J. Mendelsohn,		Frequency: 1
+Label: Hurrikan Katrina,		Frequency: 1
+Label: Mitteldeutsche Basketball Club,		Frequency: 1
+Label: Tomahawk,		Frequency: 1
+Label: Saison 1994/95,		Frequency: 1
+Label: Derrick Rose,		Frequency: 1
+Label: Olympischen Spielen in Barcelona,		Frequency: 1
+Label: Mia Hamm,		Frequency: 1
+Label: Fasciitis plantaris,		Frequency: 1
+Label: UNC Tar Heels,		Frequency: 1
+Label: Seezunge,		Frequency: 1
+Label: Atlantic Coast Conference,		Frequency: 1
+Label: Mario Van Peebles,		Frequency: 1
+Label: Bill Moseley,		Frequency: 1
+Label: Autorennen,		Frequency: 1
+Label: Denise Curry,		Frequency: 1
+Label: Korbleger,		Frequency: 1
+Label: Einzelzeitfahren,		Frequency: 1
+Label: Cindy Crawford,		Frequency: 1
+Label: Ivan Lendl,		Frequency: 1
+Label: Ben Lee,		Frequency: 1
+Label: Dino Meneghin,		Frequency: 1
+Label: Sugar Ray Leonard,		Frequency: 1
+Label: Tracy Chapman,		Frequency: 1
+Label: Hip-Hop-Musiker,		Frequency: 1
+Label: Panamerikanischen Spielen 1983,		Frequency: 1
+Label: Randy Brown,		Frequency: 1
+Label: Bierfest,		Frequency: 1
+Label: Saison 2010/11,		Frequency: 1
+Label: Antoine Carr,		Frequency: 1
+Label: NBA All-Star-Team,		Frequency: 1
+Label: Baptistischen Weltbundes,		Frequency: 1
+Label: Grizzlies,		Frequency: 1
+Label: 19. Februar,		Frequency: 1
+Label: Ehrenhalle der US-Profiliga NBA,		Frequency: 1
+Label: Salt Lake City,		Frequency: 1
+Label: Hamburger SV,		Frequency: 1
+Label: Heatherley’s School of Fine Art,		Frequency: 1
+Label: Washington,		Frequency: 1
+Label: Billy Cunningham,		Frequency: 1
+Label: Basketballer des Jahres,		Frequency: 1
+Label: Andrés Jiménez,		Frequency: 1
+Label: Warschauer Pakt,		Frequency: 1
+Label: Sportjournalist,		Frequency: 1
+Label: italienischen,		Frequency: 1
+Label: Minneapolis Lakers,		Frequency: 1
+Label: NBA Saison 1998/99,		Frequency: 1
+Label: CEO,		Frequency: 1
+Label: Rudi Klein,		Frequency: 1
+Label: Expansion Team,		Frequency: 1
+Label: Bruce Bowen,		Frequency: 1
+Label: Parodie,		Frequency: 1
+Label: Geno Auriemma,		Frequency: 1
+Label: 24. April,		Frequency: 1
+Label: Jordan, Max August,		Frequency: 1
+Label: Air (Musik),		Frequency: 1
+Label: Eddie Jones,		Frequency: 1
+Label: Carol Menken-Schaudt,		Frequency: 1
+Label: Forwards,		Frequency: 1
+Label: Ehrendoktor,		Frequency: 1
+Label: P. J. Soles,		Frequency: 1
+Label: The Crystal Method,		Frequency: 1
+Label: Ghostbusters – Die Geisterjäger,		Frequency: 1
+Label: Minneapolis,		Frequency: 1
+Label: Kwame Brown,		Frequency: 1
+Label: Bruce Hornsby,		Frequency: 1
+Label: Queens,		Frequency: 1
+Label: Regina Buggy,		Frequency: 1
+Label: Hollywood Hills,		Frequency: 1
+Label: Fédération Internationale de Basketball,		Frequency: 1
+Label: Arkansas,		Frequency: 1
+Label: Kölner Haie,		Frequency: 1
+Label: 12. Oktober,		Frequency: 1
+Label: Chris Morris,		Frequency: 1
+Label: Atlanta Falcons,		Frequency: 1
+Label: Jordan, Michael-Hakim,		Frequency: 1
+Label: Ära,		Frequency: 1
+Label: Paul Arizin,		Frequency: 1
+Label: Douglas Kimbell,		Frequency: 1
+Label: Joe Barry Carroll,		Frequency: 1
+Label: Adrian Dantley,		Frequency: 1
+Label: Jordán, Michal,		Frequency: 1
+Label: University of Kentucky,		Frequency: 1
+Label: Charles Lindbergh,		Frequency: 1
+Label: Tamera Young,		Frequency: 1
+Label: James Naismith,		Frequency: 1
+Label: Josh Freese,		Frequency: 1
+Label: George Mikan,		Frequency: 1
+Label: Janice Lawrence,		Frequency: 1
+Label: Sam Vincent,		Frequency: 1
+Label: Hühnchen,		Frequency: 1
+Label: FIBA Europe Player Of The Year Award,		Frequency: 1
+Label: Maurice Ager,		Frequency: 1
+Label: Danny Ferry,		Frequency: 1
+Label: Brandon Jennings,		Frequency: 1
+Label: 1289,		Frequency: 1
+Label: Washington D. C.,		Frequency: 1
+Label: Basketballnationalmannschaft der UdSSR,		Frequency: 1
+Label: Michael Jordan (Zeichner),		Frequency: 1
+Label: Michael Bay,		Frequency: 1
+Label: Serge Brammertz,		Frequency: 1
+Label: John F. Kennedy,		Frequency: 1
+Label: Dreipunktewürfen,		Frequency: 1
+Label: Madrid,		Frequency: 1
+Label: Ademola Okulaja,		Frequency: 1
+Label: Virginia Squires,		Frequency: 1
+Label: Rezept,		Frequency: 1
+Label: Brandon Williams,		Frequency: 1
+Label: NBA All-Stars,		Frequency: 1
+Label: Bill Cartwright,		Frequency: 1
+Label: Douglas Partie,		Frequency: 1
+Label: Vier kleine Mädchen,		Frequency: 1
+Label: Matt Geiger,		Frequency: 1
+Label: Spielzeit 2004/05,		Frequency: 1
+Label: Minnesota Vikings,		Frequency: 1
+Label: Jack Molinas,		Frequency: 1
+Label: Caracas,		Frequency: 1
+Label: University of Washington,		Frequency: 1
+Label: Mizuho Financial Group,		Frequency: 1
+Label: London,		Frequency: 1
+Label: Andrew Bogut,		Frequency: 1
+Label: Anne Donovan,		Frequency: 1
+Label: Anita Miller,		Frequency: 1
+Label: Brother,		Frequency: 1
+Label: Woody Harrelson,		Frequency: 1
+Label: Denton Lotz,		Frequency: 1
+Label: Zeichentrick,		Frequency: 1
+Label: engl.,		Frequency: 1
+Label: Susan Rojcewicz,		Frequency: 1
+Label: 20. Januar,		Frequency: 1
+Label: University of North Carolina at Chapel Hill,		Frequency: 1
+Label: Fernsehproduktion,		Frequency: 1
+Label: Utah,		Frequency: 1
+Label: Diane Moyer,		Frequency: 1
+Label: Scarlett Johansson,		Frequency: 1
+Label: Saison 1990/91,		Frequency: 1
+Label: Antonio Davis,		Frequency: 1
+Label: Madera,		Frequency: 1
+Label: Eddie Murphy,		Frequency: 1
+Label: Ballgewinne,		Frequency: 1
+Label: Harald Havas,		Frequency: 1
+Label: Christian Welp,		Frequency: 1
+Label: Stiftung für den Olympischen Frieden,		Frequency: 1
+Label: Bob Dylan,		Frequency: 1
+Label: Super Bowl XXXVIII,		Frequency: 1
+Label: kanadischen,		Frequency: 1
+Label: Paul Allen,		Frequency: 1
+Label: David Saunders,		Frequency: 1
+Label: Willie Jones,		Frequency: 1
+Label: US-amerikanisches,		Frequency: 1
+Label: Jermaine Stewart,		Frequency: 1
+Label: John McEnroe,		Frequency: 1
+Label: James Bergeson,		Frequency: 1
+Label: "Vereinte Team",		Frequency: 1
+Label: Dunk,		Frequency: 1
+Label: Shreveport,		Frequency: 1
+Label: Basketball-Weltmeisterschaft,		Frequency: 1
+Label: ET 1,		Frequency: 1
+Label: Olympischen Friedens,		Frequency: 1
+Label: Pentagon,		Frequency: 1
+Label: Ballgewinnen,		Frequency: 1
+Label: Budapest,		Frequency: 1
+Label: Cyrus McCormick,		Frequency: 1
+Label: Women’s Basketball Hall of Fame,		Frequency: 1
+Label: Too Short,		Frequency: 1
+Label: Michael Lovato,		Frequency: 1
+Label: NBA Development League,		Frequency: 1
+Label: Muhammad Ali,		Frequency: 1
+Label: George A. Romero,		Frequency: 1
+Label: gedrafted,		Frequency: 1
+Label: Deion Sanders,		Frequency: 1
+Label: Beth Beglin,		Frequency: 1
+Label: James Thorington,		Frequency: 1
+Label: UEFA Super Cup,		Frequency: 1
+Label: DJ,		Frequency: 1
+Label: NASCAR,		Frequency: 1
+Label: Pro Bowl,		Frequency: 1
+Label: Phoenix Coyotes,		Frequency: 1
+Label: Walt Frazier,		Frequency: 1
+Label: Augsburg,		Frequency: 1
+Label: Jeffrey Turner,		Frequency: 1
+Label: Shotclock,		Frequency: 1
+Label: IOC,		Frequency: 1
+Label: Cool World,		Frequency: 1
+Label: Juan Antonio San Epifanio,		Frequency: 1
+Label: Ben Wallace,		Frequency: 1
+Label: Josh Smith,		Frequency: 1
+Label: Lionel Hitchman,		Frequency: 1
+Label: aserbaidschans,		Frequency: 1
+Label: Monolith,		Frequency: 1
+Label: Richard Dreyfuss,		Frequency: 1
+Label: FC Granada,		Frequency: 1
+Label: Tim McIlrath,		Frequency: 1
+Label: Richard Gere,		Frequency: 1
+Label: M.J.,		Frequency: 1
+Label: Michael Moore,		Frequency: 1
+Label: Chris Hanburger,		Frequency: 1
+Label: Shawn Colvin,		Frequency: 1
+Label: Lowe’s Motor Speedway,		Frequency: 1
+Label: Trainer des Jahres,		Frequency: 1
+Label: Drexler,		Frequency: 1
+Label: Cornbugs,		Frequency: 1
+Label: Bank of America Stadium,		Frequency: 1
+Label: VfL Wolfsburg,		Frequency: 1
+Label: Loyola University Chicago,		Frequency: 1
+Label: Til Mette,		Frequency: 1
+Label: Rodeo,		Frequency: 1
+Label: Steak,		Frequency: 1
+Label: 26. Juni,		Frequency: 1
+Label: Ludwig Purtscheller,		Frequency: 1
+Label: Stamford,		Frequency: 1
+Label: FIATC Joventut,		Frequency: 1
+Label: kroatische Team,		Frequency: 1
+Label: Olympischen Sommerspiele 1992,		Frequency: 1
+Label: Robert Traylor,		Frequency: 1
+Label: Bo Knows,		Frequency: 1
+Label: San Bernardino,		Frequency: 1
+Label: Tupac Shakur,		Frequency: 1
+Label: Carolyn Jones,		Frequency: 1
+Label: Madonna,		Frequency: 1
+Label: NBA All-Star Weekends,		Frequency: 1
+Label: Tammy Jackson,		Frequency: 1
+Label: All-Star Game 1994,		Frequency: 1
+Label: Basketball-Europameisterschaft 1935,		Frequency: 1
+Label: Effektivität (Basketball),		Frequency: 1
+Label: Chauncey Billups,		Frequency: 1
+Label: 1604,		Frequency: 1
+Label: Detroit,		Frequency: 1
+Label: Mullin,		Frequency: 1
+Label: Peter Campbell,		Frequency: 1
+Label: All-Star Game 1995,		Frequency: 1
+Label: Ashlyn Harris,		Frequency: 1
+Label: Pacific League,		Frequency: 1
+Label: 1980er,		Frequency: 1
+Label: Donyell Marshall,		Frequency: 1
+Label: Black or White,		Frequency: 1
+Label: Liste der Fluggesellschaften,		Frequency: 1
+Label: Größenordnung (Energie),		Frequency: 1
+Label: Fantasyfilm,		Frequency: 1
+Label: Sucker Punch,		Frequency: 1
+Label: Eric Montross,		Frequency: 1
+Label: David Julius,		Frequency: 1
+Label: NFL Draft,		Frequency: 1
+Label: Ewing,		Frequency: 1
+Label: Walter Davis,		Frequency: 1
+Label: 1626,		Frequency: 1
+Label: Jeffrey Malcolm Stork,		Frequency: 1
+Label: Star Trek,		Frequency: 1
+Label: 29. September,		Frequency: 1
+Label: Patricia Roberts,		Frequency: 1
+Label: Saison 1995/96,		Frequency: 1
+Label: Amina Garner,		Frequency: 1
+Label: American Airlines Center,		Frequency: 1
+Label: Charlotte Sting,		Frequency: 1
+Label: J.J. Barea,		Frequency: 1
+Label: Birmingham, Alabama,		Frequency: 1
+Label: NBA-Draft 2007,		Frequency: 1
+Label: Alan Mouchawar,		Frequency: 1
+Label: Bob McAdoo,		Frequency: 1
+Label: FIBA EuroCup Challenge,		Frequency: 1
+Label: NBBL,		Frequency: 1
+Label: Freiwurf,		Frequency: 1
+Label: Matt Guokas jr.,		Frequency: 1
+Label: Cindy Brogdon,		Frequency: 1
+Label: Mick Jagger,		Frequency: 1
+Label: Dansguard,		Frequency: 1
+Label: R&B,		Frequency: 1
+Label: Vern Fleming,		Frequency: 1
+Label: The Birdcage – Ein Paradies für schrille Vögel,		Frequency: 1
+Label: Pierre de Coubertin,		Frequency: 1
+Label: 25. Februar,		Frequency: 1
+Label: 55. Eurovision Song Contest,		Frequency: 1
+Label: Jim Valvano,		Frequency: 1
+Label: Bill Shoemaker,		Frequency: 1
+Label: Sultanat Aïr,		Frequency: 1
+Label: Tim Floyd,		Frequency: 1
+Label: Eazy-E,		Frequency: 1
+Label: Geto Boys,		Frequency: 1
+Label: Wurfuhr,		Frequency: 1
+Label: Rudy Gay,		Frequency: 1
+Label: 25. September,		Frequency: 1
+Label: Alex Borstein,		Frequency: 1
+Label: Ken Jeong,		Frequency: 1
+Label: Pat Summitt,		Frequency: 1
+Label: Clio Award,		Frequency: 1
+Label: Tom Thibodeau,		Frequency: 1
+Label: argentinischen Nationalmannschaft,		Frequency: 1
+Label: Guildo Horn,		Frequency: 1
+Label: Massachusetts,		Frequency: 1
+Label: Spielzeit 1989/90,		Frequency: 1
+Label: Die Reise ins Ich,		Frequency: 1
+Label: University of Texas at El Paso,		Frequency: 1
+Label: Victor Boin,		Frequency: 1
+Label: MJ-Gewinde,		Frequency: 1
+Label: Kathleen McGahey,		Frequency: 1
+Label: Brett Gurewitz,		Frequency: 1
+Label: Kirk Gibson,		Frequency: 1
+Label: Joe Smith,		Frequency: 1
+Label: Phil Ford,		Frequency: 1
+Label: Jordan, Marlon,		Frequency: 1
+Label: Sayat Nova,		Frequency: 1
+Label: Basketball-Bundesliga,		Frequency: 1
+Label: Andrew Powell,		Frequency: 1
+Label: Matt Guokas sr.,		Frequency: 1
+Label: Oak Lawn,		Frequency: 1
+Label: Football,		Frequency: 1
+Label: Farmteam,		Frequency: 1
+Label: Welt-,		Frequency: 1
+Label: Rick Mahorn,		Frequency: 1
+Label: Luc Longley,		Frequency: 1
+Label: Peking,		Frequency: 1
+Label: Vin Baker,		Frequency: 1
+Label: Anthony Hopkins,		Frequency: 1
+Label: Alton Asa Lennon,		Frequency: 1
+Label: DeSagana Diop,		Frequency: 1
+Label: Tel Aviv,		Frequency: 1
+Label: Gerald Wallace,		Frequency: 1
+Label: Joe Pytka,		Frequency: 1
+Label: Reebok,		Frequency: 1
+Label: Flip Saunders,		Frequency: 1
+Label: Achdé,		Frequency: 1
+Label: L7,		Frequency: 1
+Label: Guy Lewis,		Frequency: 1
+Label: Jim Brown,		Frequency: 1
+Label: Chuck Taylor,		Frequency: 1
+Label: Zombie,		Frequency: 1
+Label: Yankee-I-Klasse,		Frequency: 1
+Label: San Diego,		Frequency: 1
+Label: Bryon Russell,		Frequency: 1
+Label: Aftershock,		Frequency: 1
+Label: 1578,		Frequency: 1
+Label: 30. Mai,		Frequency: 1
+Label: Julie Staver,		Frequency: 1
+Label: Free Agent,		Frequency: 1
+Label: Richie Rich,		Frequency: 1
+Label: Falsches Spiel mit Roger Rabbit,		Frequency: 1
+Label: Kardiologe,		Frequency: 1
+Label: Heather Nova,		Frequency: 1
+Label: Kōbe,		Frequency: 1
+Label: Golf,		Frequency: 1
+Label: Jahres 1999,		Frequency: 1
+Label: Athen,		Frequency: 1
+Label: Safura,		Frequency: 1
+Label: Alice Cooper,		Frequency: 1
+Label: Randy Cassingham,		Frequency: 1
+Label: Steve,		Frequency: 1
+Label: Craig Buck,		Frequency: 1
+Label: NFL Rookie of the Year Award,		Frequency: 1
+Label: Nancy Dunkle,		Frequency: 1
+Label: NASCAR Hall of Fame,		Frequency: 1
+Label: NBA Sportsmanship Award,		Frequency: 1
+Label: deutsche,		Frequency: 1
+Label: Russland,		Frequency: 1
+Label: Ptolemaios V. Epiphanes,		Frequency: 1
+Label: Animations-,		Frequency: 1
+Label: Shin Terai,		Frequency: 1
+Label: Nick Nolte,		Frequency: 1
+Label: Paul Pierce,		Frequency: 1
+Label: NBA All-Defensive Team,		Frequency: 1
+Label: Guitar Hero 2,		Frequency: 1
+Label: Lynette Woodard,		Frequency: 1
+Label: Prince,		Frequency: 1
+Label: Harold Miner,		Frequency: 1
+Label: Naomi Campbell,		Frequency: 1
+Label: Whoopi Goldberg,		Frequency: 1
+Label: Wally Szczerbiak,		Frequency: 1
+Label: Barkley,		Frequency: 1
+Label: Nazr Mohammed,		Frequency: 1
+Label: MLB,		Frequency: 1
+Label: Juan Antonio San Epifanio „Epi“,		Frequency: 1
+Label: University of Memphis,		Frequency: 1
+Label: Detlef Schrempf Foundation,		Frequency: 1
+Label: Howard Hughes,		Frequency: 1
+Label: Travis Dickerson,		Frequency: 1
+Label: Edition Moderne,		Frequency: 1
+Label: Werner Theodor Martini,		Frequency: 1
+Label: Cannes,		Frequency: 1
+Label: Troy Tanner,		Frequency: 1
+Label: EM-Endrunde,		Frequency: 1
+Label: Draft,		Frequency: 1
+Label: deutschen Basketball-Bundesliga,		Frequency: 1
+Label: philippinische,		Frequency: 1
+Label: Pittsburgh Rens,		Frequency: 1
+Label: Mavericks,		Frequency: 1
+Label: Bo Jackson,		Frequency: 1
+Label: Keith Van Horn,		Frequency: 1
+Label: Arthur Ochs Sulzberger,		Frequency: 1
+Label: Art Center College of Design,		Frequency: 1
+Label: Liste der NBA-All-Defensive Teams,		Frequency: 1
+Label: Wasserball,		Frequency: 1
+Label: Ford Motor Company,		Frequency: 1
+Label: Ratiopharm Ulm,		Frequency: 1
+Label: NBA-Draft 1994,		Frequency: 1
+Label: NBA-Draft 1992,		Frequency: 1
+Label: Michael Olowokandi,		Frequency: 1
+Label: Fußball-WM,		Frequency: 1
+Label: Ricky Steamboat,		Frequency: 1
+Label: Erdgas Ehingen/Urspringschule,		Frequency: 1
+Label: Michel Der Zakarian,		Frequency: 1
+Label: Jesse Jackson,		Frequency: 1
+Label: Real Madrid,		Frequency: 1
+Label: NBA-Draft 1985,		Frequency: 1
+Label: Jim Otto,		Frequency: 1
+Label: Ben Wilson,		Frequency: 1
+Label: Helmut Kaplan,		Frequency: 1
+Label: Die Legende der Wächter,		Frequency: 1
+Label: Marke,		Frequency: 1
+Label: Rebuild,		Frequency: 1
+Label: Deep Cover,		Frequency: 1
+Label: 2009/10,		Frequency: 1
+Label: Brenda Stauffer,		Frequency: 1
+Label: John Starks,		Frequency: 1
+Label: spanische,		Frequency: 1
+Label: NBA-Saison 1993/94,		Frequency: 1
+Label: Marcella Place,		Frequency: 1
+Label: 11. September 2001,		Frequency: 1
+Label: Indy Racing League,		Frequency: 1
+Label: Craig Klass,		Frequency: 1
+Label: Calvin Hill,		Frequency: 1
+Label: Sommerakademie Kassel,		Frequency: 1
+Label: Little Kings,		Frequency: 1
+Label: Jon Koncak,		Frequency: 1
+Label: Hersey Hawkins,		Frequency: 1
+Label: Sam Jones III,		Frequency: 1
+Label: Charlie Ward,		Frequency: 1
+Label: Afroamerikaner,		Frequency: 1
+Label: egoistisch,		Frequency: 1
+Label: Carolina Panthers,		Frequency: 1
+Label: Severiano Ballesteros,		Frequency: 1
+Label: US-Nationalmannschaft,		Frequency: 1
+Label: Kamerun,		Frequency: 1
+Label: NBA-Saison 1995/1996,		Frequency: 1
+Label: Serj Tankian,		Frequency: 1
+Label: Air (Psychologie),		Frequency: 1
+Label: Tone Loc,		Frequency: 1
+Label: Roy Rogers,		Frequency: 1
+Label: Andrei Kirilenko,		Frequency: 1
+Label: Alcobendas,		Frequency: 1
+Label: Silhouette,		Frequency: 1
+Label: Derrick Coleman,		Frequency: 1
+Label: venezolanischen,		Frequency: 1
+Label: Gheorghe Muresan,		Frequency: 1
+Label: Katrina McClain,		Frequency: 1
+Label: Lowpost,		Frequency: 1
+Label: Buddha,		Frequency: 1
+Label: jugoslawische Basketballnationalmannschaft,		Frequency: 1
+Label: Oakland,		Frequency: 1
+Label: Novitzki,		Frequency: 1
+Label: NBA Playoffs,		Frequency: 1
+Label: Japan,		Frequency: 1
+Label: Fünfzigern,		Frequency: 1
+Label: Michel Armstrong,		Frequency: 1
+Label: Morrissey,		Frequency: 1
+Label: George Burns,		Frequency: 1
+Label: Janet Hill,		Frequency: 1
+Label: Orchesterarbeiten,		Frequency: 1
+Label: Weiße Jungs bringen’s nicht,		Frequency: 1
+Label: Thanatopsis,		Frequency: 1
+Label: Bill Wennington,		Frequency: 1
+Label: Hattiesburg,		Frequency: 1
+Label: Kardinalzahlen,		Frequency: 1
+Label: Joseph Kleine,		Frequency: 1
+Label: Randy Wittman,		Frequency: 1
+Label: Beth Anders,		Frequency: 1
+Label: Atlantic Division,		Frequency: 1
+Label: Michael-Hakim Jordan,		Frequency: 1
+Label: Ho Chi Minh,		Frequency: 1
+Label: Bad 25,		Frequency: 1
+Label: Bester Ton,		Frequency: 1
+Label: Fußball-Afrikameisterschaft 1984,		Frequency: 1
+Label: Adobe Integrated Runtime,		Frequency: 1
+Label: Philip Hubbard,		Frequency: 1
+Label: Steve Sheppard,		Frequency: 1
+Label: regulären NBA-Saison 2006/2007,		Frequency: 1
+Label: Hamburg,		Frequency: 1
+Label: israel,		Frequency: 1
+Label: Pasta,		Frequency: 1
+Label: 1990er,		Frequency: 1
+Label: Converse,		Frequency: 1
+Label: Dr. House,		Frequency: 1
+Label: Devin Harris,		Frequency: 1
+Label: Pirouette,		Frequency: 1
+Label: Brooklyn,		Frequency: 1
+Label: Jack Quaid,		Frequency: 1
+Label: NBA Most Improved Player Award,		Frequency: 1
+Label: Rekordhalter,		Frequency: 1
+Label: Vandals,		Frequency: 1
+Label: 1988 in Seoul,		Frequency: 1
+Label: Eintracht Frankfurt,		Frequency: 1
+Label: 1999/00,		Frequency: 1
+Label: 2004/05,		Frequency: 1
+Label: Clio Awards,		Frequency: 1
+Label: Rebecca Loos,		Frequency: 1
+Label: 2006,		Frequency: 1
+Label: 2007,		Frequency: 1
+Label: 2002,		Frequency: 1
+Label: Explosion,		Frequency: 1
+Label: Mary-Anne O'Connor,		Frequency: 1
+Label: Pierluigi Marzorati,		Frequency: 1
+Label: Roy Williams,		Frequency: 1
+Label: Legende,		Frequency: 1
+Label: Ferdinand II.,		Frequency: 1
+Label: 2011,		Frequency: 1
+Label: Louisiana,		Frequency: 1
+Label: 2013,		Frequency: 1
+Label: Dietmar Brehm,		Frequency: 1
+Label: Straßenrad-Weltmeisterschaft,		Frequency: 1
+Label: Weltmeisterschaft,		Frequency: 1
+Label: Pamela McGee,		Frequency: 1
+Label: Brooklyn Nets,		Frequency: 1
+Label: Leslie Milne,		Frequency: 1
+Label: Chris Webber,		Frequency: 1
+Label: Pasadena,		Frequency: 1
+Label: Peder Kofod Ancher,		Frequency: 1
+Label: Freehold,		Frequency: 1
+Label: direkten Vergleichs,		Frequency: 1
+Label: US-amerikanische Basketball-Nationalmannschaft,		Frequency: 1
+Label: Arzt,		Frequency: 1
+Label: Akeem Olajuwon,		Frequency: 1
+Label: Max Zaslofsky,		Frequency: 1
+Label: Lawrence Ferlinghetti,		Frequency: 1
+Label: Lamar Odom,		Frequency: 1
+Label: North Babylon,		Frequency: 1
+Label: Ricci Luyties,		Frequency: 1
+Label: Victoria Bullett,		Frequency: 1
+Label: 31. Dezember,		Frequency: 1
+Label: General Manager,		Frequency: 1
+Label: 2000,		Frequency: 1
+Label: Stirb langsam,		Frequency: 1
+Label: MVP des NBA All-Star Games,		Frequency: 1
+Label: Low-Post,		Frequency: 1
+Label: Most Valuable Player der NBA Finals,		Frequency: 1
+Label: Ian Bairnson,		Frequency: 1
+Label: deutscher Meister,		Frequency: 1
+Label: Five,		Frequency: 1
+Label: Rookie Challenge,		Frequency: 1
+Label: Iris Kammerer,		Frequency: 1
+Label: Franzose,		Frequency: 1
+Label: Michelle Akers,		Frequency: 1
+Label: RCD Mallorca,		Frequency: 1
+Label: American Basketball Association,		Frequency: 1
+Label: Paris,		Frequency: 1
+Label: Draftkandidaten,		Frequency: 1
+Label: Kroatien,		Frequency: 1
+Label: Australien,		Frequency: 1
+Label: Bernie Bickerstaff,		Frequency: 1
+Label: Don Cheaney,		Frequency: 1
+Label: AT&T,		Frequency: 1
+Label: Gail Marquis,		Frequency: 1
+Label: Tyrone Corbin,		Frequency: 1
+Label: NBA Saison 2004/05,		Frequency: 1
+Label: Patrick Ewing Jr.,		Frequency: 1
+Label: Sean Elliott,		Frequency: 1
+Label: Babe Ruth,		Frequency: 1
+Label: Olympischen Eid,		Frequency: 1
+Label: Tyra Banks,		Frequency: 1
+Label: Antonello Riva,		Frequency: 1
+Label: Siegfried Anzinger,		Frequency: 1
+Label: Olympische Spiele,		Frequency: 1
+Label: Double-Double,		Frequency: 1
+Label: Jimmy Connors,		Frequency: 1
+Label:  NBA,		Frequency: 1
+Label: Stanley Cup,		Frequency: 1
+Label: Pyramid Arena,		Frequency: 1
+Label: Protagonist,		Frequency: 1
+Label: Spike Lee,		Frequency: 1
+Label: Spanien,		Frequency: 1
+Label: Jim Everett,		Frequency: 1
+Label: Lee Evans,		Frequency: 1
+Label: Leslie Alexander,		Frequency: 1
+Label: Michael Kahn,		Frequency: 1
+Label: Anders Frisk,		Frequency: 1
+Label: Jerry Rice,		Frequency: 1
+Label: Saison 1993/94,		Frequency: 1
+Label: 12. Januar,		Frequency: 1
+Label: Jody Campbell,		Frequency: 1
+Label: International Amphitheatre,		Frequency: 1
+Label: Elvin Hayes,		Frequency: 1
+Label: Katharine Hepburn,		Frequency: 1
+Label: Robert Justman,		Frequency: 1
+Label: NFC,		Frequency: 1
+Label: 1529,		Frequency: 1
+Label: MTV Video Music Awards,		Frequency: 1
+Label: Jeromus Johnson,		Frequency: 1
+Label: Jamal Mashburn,		Frequency: 1
+Label: Schrittfehler,		Frequency: 1
+Label: Marihuana,		Frequency: 1
+Label: Cosplay,		Frequency: 1
+Label: 2008/09,		Frequency: 1
+Label: dunken,		Frequency: 1
+Label: Transparent,		Frequency: 1
+Label: Robert Jan Ctvrtlik,		Frequency: 1
+Label: Karen Horney,		Frequency: 1
+Label: Simpsons,		Frequency: 1
+Label: Pokalwettbewerb,		Frequency: 1
+Label: Malaysia,		Frequency: 1
+Label: Action-Film,		Frequency: 1
+Label: sechster Mann,		Frequency: 1
+Label: Sydney,		Frequency: 1
+Label: Bands,		Frequency: 1
+Label: Raymond Felton,		Frequency: 1
+Label: NIT,		Frequency: 1
+Label: Adam Morrison,		Frequency: 1
+Label: Fliegenden Spaghettimonsters,		Frequency: 1
+Label: Julius Echter von Mespelbrunn,		Frequency: 1
+Label: Georgia,		Frequency: 1
+Label: Conseco Fieldhouse,		Frequency: 1
+Label: Connie Hawkins,		Frequency: 1
+Label: Nierentransplantation,		Frequency: 1
+Label: Tisha Campbell-Martin,		Frequency: 1
+Label: Touchdowns,		Frequency: 1
+Label: Begegnungen – Intersection,		Frequency: 1
+Label: Tom Selleck,		Frequency: 1
+Label: Vereinigte Staaten von Amerika,		Frequency: 1
+Label: MVP der Playoff´s,		Frequency: 1
+Label: Laettner,		Frequency: 1
+Label: Robinson,		Frequency: 1
+Label: Sheryl Johnson,		Frequency: 1
+Label: Brad Johnson,		Frequency: 1
+Label: La Crosse,		Frequency: 1
+Label: Chucks,		Frequency: 1
+Label: Pulitzer-Preis für Auslandsberichterstattung,		Frequency: 1
+Label: 17. August,		Frequency: 1
+Label: Green Bay Packers,		Frequency: 1
+Label: 1552,		Frequency: 1
+Label: Robert F. Kennedy,		Frequency: 1
+Label: Lega Basket Serie A,		Frequency: 1
+Label: Subcomandante Marcos,		Frequency: 1
+Label: REO,		Frequency: 1
+Label: Byron Scott,		Frequency: 1
+Label: Erica Jong,		Frequency: 1
+Label: japan,		Frequency: 1
+Label: Orson Welles,		Frequency: 1
+Label: Charlene Morett,		Frequency: 1
+Label: 1545,		Frequency: 1
+Label: Sports Bar,		Frequency: 1
+Label: Shandon Anderson,		Frequency: 1
+Label: Thomas la Garde,		Frequency: 1
+Label: Rudervereinen,		Frequency: 1
+Label: Olympia-Boykott,		Frequency: 1
+Label: San Francisco Warriors,		Frequency: 1
+Label: 17. Juli,		Frequency: 1
+Label: NBA All-Star Weekend,		Frequency: 1
+Label: Scott May,		Frequency: 1
+Label: "Redeem Team",		Frequency: 1
+Label: University of Houston,		Frequency: 1
+Label: MVP des All-Star Games,		Frequency: 1
+Label: Filmwissenschaft,		Frequency: 1
+Label: University of Iowa,		Frequency: 1
+Label: Slam-Dunk-Contests,		Frequency: 1
+Label: Damon Stoudamire,		Frequency: 1
+Label: 1975,		Frequency: 1
+Label: Tennessee,		Frequency: 1
+Label: 1978,		Frequency: 1
+Label: 1979,		Frequency: 1
+Label: 12. April,		Frequency: 1
+Label: 18. Dezember,		Frequency: 1
+Label: Dampfdreirad,		Frequency: 1
+Label: Charles Kiraly,		Frequency: 1
+Label: Manuele Fior,		Frequency: 1
+Label: Mihin Lanka,		Frequency: 1
+Label: VfB Stuttgart,		Frequency: 1
+Label: Rumänien,		Frequency: 1
+Label: 1983,		Frequency: 1
+Label: Jason Richardson,		Frequency: 1
+Label: Gmunden,		Frequency: 1
+Label: Atlantischen Ozean,		Frequency: 1
+Label: Jan Ullrich,		Frequency: 1
+Label: Unterseeboot,		Frequency: 1
+Label: 1495,		Frequency: 1
+Label: 1492,		Frequency: 1
+Label: Silbernen Löwen,		Frequency: 1
+Label: Sonny Jurgensen,		Frequency: 1
+Label: 1459,		Frequency: 1
+Label: Vancouver Grizzlies,		Frequency: 1
+Label: Lebanon,		Frequency: 1
+Label: NBA Eastern Conference,		Frequency: 1
+Label: Bürgerrechtsbewegung,		Frequency: 1
+Label: Texas-City-Explosion,		Frequency: 1
+Label: NBA Finals MVP Award,		Frequency: 1
+Label: Düstere Legenden 2,		Frequency: 1
+Label: Samuel Perkins,		Frequency: 1
+Label: Charlotte Lewis,		Frequency: 1
+Label: 1998,		Frequency: 1
+Label: Charles H. Joffe,		Frequency: 1
+Label: Bobby Charlton,		Frequency: 1
+Label: David Blaine,		Frequency: 1
+Label: George Karl,		Frequency: 1
+Label: Bill Cosby,		Frequency: 1
+Label: University of Michigan,		Frequency: 1
+Label: FIFA 100,		Frequency: 1
+Label: Jahr darauf,		Frequency: 1
+Label: Bill Murray,		Frequency: 1
+Label: Kim Mulkey,		Frequency: 1
+Label: Daycroft School,		Frequency: 1
+Label: John Williams,		Frequency: 1
+Label: 2002/03,		Frequency: 1
+Label: NBA Draft 2001,		Frequency: 1
+Label: LaRue Martin,		Frequency: 1
+Label: Stan Smith,		Frequency: 1
+Label: Echoes – Stimmen aus der Zwischenwelt,		Frequency: 1
+Label: Natural Bridges National Monument,		Frequency: 1
+Label: Kernphysik,		Frequency: 1
+Label: Saison 2008/09,		Frequency: 1
+Label: Danny DeVito,		Frequency: 1
+Label: Nick Adrian Becker,		Frequency: 1
+Label: San Francisco Giants,		Frequency: 1
+Label: Kofi Annan,		Frequency: 1
+Label: Partnership for a Drug-Free America,		Frequency: 1
+Label: Iman,		Frequency: 1
+Label: Conference,		Frequency: 1
+Label: Lou Gehrig,		Frequency: 1
+Label: WM 2006,		Frequency: 1
+Label: DreamWorks,		Frequency: 1
+Label: Greenpeace,		Frequency: 1
+Label: Robert John,		Frequency: 1
+Label: Chris Evert,		Frequency: 1
+Label: Gregg Popovich,		Frequency: 1
+Label: WM 2002,		Frequency: 1
+Label: Texas,		Frequency: 1
+Label: P.&nbsp;J. Brown,		Frequency: 1
+Label: Malcolm Browne,		Frequency: 1
+Label: Hackensack,		Frequency: 1
+Label: Pöstlingberg,		Frequency: 1
+Label: National Basketball Players Association,		Frequency: 1
+Label: Saison 1951/52,		Frequency: 1
+Label: NBA Saison 2005/06,		Frequency: 1
+Label: Petrus Apianus,		Frequency: 1
+Label: 3. August,		Frequency: 1
+Label: Lebenswerk,		Frequency: 1
+Label: TBB Trier,		Frequency: 1
+Label: UNO,		Frequency: 1
+Label: Kenneth Carr,		Frequency: 1
+Label: Macaulay Culkin,		Frequency: 1
+Label: Jordan, Martin,		Frequency: 1
+Label: Statue,		Frequency: 1
+Label: Anthony „Spud“ Webb,		Frequency: 1
+Label: Premier League 2007/08,		Frequency: 1
+Label: Wilhelm Middelschulte,		Frequency: 1
+Label: Bo Diddley,		Frequency: 1
+Label: Olympischen Spielen 2008,		Frequency: 1
+Label: Stadion,		Frequency: 1
+Label: Dave Lombardo,		Frequency: 1
+Label: Vinny Del Negro,		Frequency: 1
+Label: Lorenzo Charles,		Frequency: 1
+Label: David Paton,		Frequency: 1
+Label: kriminelle,		Frequency: 1
+Label: Kara Lynn Joyce,		Frequency: 1
+Label: Vickie Orr,		Frequency: 1
+Label: Yinka Dare,		Frequency: 1
+Label: Law & Order,		Frequency: 1
+Label: 1900,		Frequency: 1
+Label: Anita Baker,		Frequency: 1
+Label: Laurence Olivier,		Frequency: 1
+Label: Elena Kagan,		Frequency: 1
+Label: Staatsamateur,		Frequency: 1
+Label: 1908,		Frequency: 1
+Label: Naval Academy,		Frequency: 1
+Label: Budweiser,		Frequency: 1
+Label: Danny Manning,		Frequency: 1
+Label: Olympischen Sommerspielen 1996 in Atlanta,		Frequency: 1
+Label: Alley oop,		Frequency: 1
+Label: Ralph Sampson,		Frequency: 1
+Label: Louisville,		Frequency: 1
+Label: B. J. Armstrong,		Frequency: 1
+Label: Terry Schroeder,		Frequency: 1
+Label: George Clinton,		Frequency: 1
+Label: Cathy Boswell,		Frequency: 1
+Label: John Lucas,		Frequency: 1
+Label: Alan Henderson,		Frequency: 1
+Label: Ammoniumnitrat,		Frequency: 1
+Label: Hettie Jones,		Frequency: 1
+Label: Greg Oden,		Frequency: 1
+Label: Spitzname,		Frequency: 1
+Label: John Wooden,		Frequency: 1
+Label: 1920,		Frequency: 1
+Label: New York State,		Frequency: 1
+Label: Bubba Wells,		Frequency: 1
+Label: NCAA-Meisterschaft,		Frequency: 1
+Label: Rekordhalter bei Punkten,		Frequency: 1
+Label: Bill,		Frequency: 1
+Label: Rundfunksprecher,		Frequency: 1
+Label: 16th Street Baptist Church,		Frequency: 1
+Label: deutschen,		Frequency: 1
+Label: Andres Nocioni,		Frequency: 1
+Label: Brooklyn Dodgers,		Frequency: 1
+Label: Greg Anthony,		Frequency: 1
+Label: 1936,		Frequency: 1
+Label: 1934,		Frequency: 1
+Label: Draft 2004,		Frequency: 1
+Label: Racing Club,		Frequency: 1
+Label: 5. Oktober,		Frequency: 1
+Label: Mary Poppins,		Frequency: 1
+Label: Miles Davis,		Frequency: 1
+Label: Polykarp Leyser der Ältere,		Frequency: 1
+Label: Seattle,		Frequency: 1
+Label: Nick Collison,		Frequency: 1
+Label: Carlos Martin Briceno,		Frequency: 1
+Label: Jim Jordan,		Frequency: 1
+Label: Getränk,		Frequency: 1
+Label: 1947,		Frequency: 1
+Label: 1948,		Frequency: 1
+Label: Verizon Center,		Frequency: 1
+Label: Kobe Steak,		Frequency: 1
+Label: Jordan, Neil,		Frequency: 1
+Label: 1942,		Frequency: 1
+Label: IRL,		Frequency: 1
+Label: College of Idaho,		Frequency: 1
+Label: Ed Healey,		Frequency: 1
+Label: Mahmoud Abdul-Rauf,		Frequency: 1
+Label: Slidell,		Frequency: 1
+Label: ProServ,		Frequency: 1
+Label: Steve Alford,		Frequency: 1
+Label: Telekom Baskets Bonn,		Frequency: 1
+Label: Moses Malone,		Frequency: 1
+Label: Team Alba Urspring,		Frequency: 1
+Label: 1954,		Frequency: 1
+Label: George Gervin,		Frequency: 1
+Label: 1953,		Frequency: 1
+Label: 13. Juli,		Frequency: 1
+Label: Lucky Luke,		Frequency: 1
+Label: Tex Winter,		Frequency: 1
+Label: Lou Diamond Phillips,		Frequency: 1
+Label: baptistischer Theologe,		Frequency: 1
+Label: 16. April,		Frequency: 1
+Label: Michael Evans,		Frequency: 1
+Label: regulären Saison,		Frequency: 1
+Label: Let It Ride,		Frequency: 1
+Label: Atle Skårdal,		Frequency: 1
+Label: 1967,		Frequency: 1
+Label: 1969,		Frequency: 1
+Label: EM-Endrunde 2005,		Frequency: 1
+Label: Yasuhiro Yamashita,		Frequency: 1
+Label: Dreipunktewurf,		Frequency: 1
+Label: Johann IV.,		Frequency: 1
+Label: Thomas Forsberg,		Frequency: 1
+Label: Kinofilm,		Frequency: 1
+

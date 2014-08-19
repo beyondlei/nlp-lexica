@@ -55,10 +55,10 @@
 
 <p><small>
 Examples:
-<s:a href="index.action?inlang=en&outlang=en&resultNum=100&type=1&searcher=New York&compare=1">New York (Resource)</s:a>, 
-<s:a href="index.action?inlang=zh&outlang=en&resultNum=100&type=1&searcher=纽约&compare=1">纽约 (Resource)</s:a>,
-<s:a href="index.action?inlang=en&outlang=en&resultNum=100&type=2&compare=1&searcher=football">football (Label)</s:a>,
-<s:a href="index.action?inlang=en&outlang=en&resultNum=100&type=3&compare=1&searcher=ipad">ipad (Word)</s:a>
+<s:a href="index.action?inlang=en&outlang=en&resultNum=100&type=1&searcher=New York">New York (Resource)</s:a>, 
+<s:a href="index.action?inlang=zh&outlang=en&resultNum=100&type=1&searcher=纽约">纽约 (Resource)</s:a>,
+<s:a href="index.action?inlang=en&outlang=en&resultNum=100&type=2&searcher=football">football (Label)</s:a>,
+<s:a href="index.action?inlang=en&outlang=en&resultNum=100&type=3&searcher=ipad">ipad (Word)</s:a>
 </small>
 
 <hr>
@@ -69,7 +69,7 @@ Examples:
 <s:if test="result.crosslingual != null">
 
 <td valign='top'><div style='background-color:#F2F5A9; padding:5px; '>
-Cross Lingual Result Association with <b><s:property value="searcher" /></b>:
+Interlingual Resources w.r.t. <b><s:property value="searcher" /></b>:
 <p><table cellspacing='1' cellpadding='5' border='1' width='250' style='margin:10px; '>
 <tr><td width='180'>Language</td><td nowrap>Resource</td></tr>
 
